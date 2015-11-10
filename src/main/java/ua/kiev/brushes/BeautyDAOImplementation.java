@@ -99,21 +99,49 @@ public class BeautyDAOImplementation implements BeautyDAO {
         }
     }
 
+    @Override
     public List<FeedBack> getAllFeedBacks() {
         Query query = entityManager.createQuery("SELECT a FROM FeedBack a", FeedBack.class);
         return (List<FeedBack>)query.getResultList();
     }
 
+    @Override
     public List<FeedBack> getFeedBacksByClientId(int ClientId) {
         Query query = entityManager.createQuery("SELECT a FROM FeedBack a WHERE a.client.id =:pattern", FeedBack.class);
         query.setParameter("pattern", ClientId);
         return (List<FeedBack>)query.getResultList();
     }
 
+    @Override
     public List<FeedBack> getFeedBacksByProductId(int ProductId) {
         Query query = entityManager.createQuery("SELECT a FROM FeedBack a WHERE a.product.id =:pattern", FeedBack.class);
         query.setParameter("pattern", ProductId);
         return (List<FeedBack>)query.getResultList();
+    }
+
+    @Override
+    public FeedBack getFeedBackById(int id) {
+        Query query = entityManager.createQuery("SELECT a FROM FeedBack a WHERE a.id =:pattern", FeedBack.class);
+        query.setParameter("pattern", id);
+        return (FeedBack)query.getResultList().get(0);
+    }
+
+    @Override
+    public void saveFeedBack(FeedBack feedBack, int id) {
+        Query query = entityManager.createQuery("SELECT a FROM FeedBack a  WHERE a.id =:var", Client.class);
+        query.setParameter("var", id);
+        FeedBack resultFeedBack = (FeedBack) query.getResultList().get(0);
+        try{
+            entityManager.getTransaction().begin();
+            resultFeedBack.setData(feedBack.getData());
+            resultFeedBack.setEvaluation(feedBack.getEvaluation());
+            resultFeedBack.setFeedback(feedBack.getFeedback());
+            entityManager.getTransaction().commit();
+        }
+        catch(Exception ex){
+            entityManager.getTransaction().rollback();
+            ex.printStackTrace();
+        }
     }
 
     @Override

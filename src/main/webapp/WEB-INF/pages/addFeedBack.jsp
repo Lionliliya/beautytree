@@ -1,17 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: lionliliya
-  Date: 05.11.15
-  Time: 15:47
+  Date: 09.11.15
+  Time: 14:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <meta charset="utf-8">
   <meta lang="ru">
-  <title>BeautyTree || Интернет магазин кистей для макияжа</title>
+  <title>Administration_BT</title>
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
@@ -33,7 +33,6 @@
   <meta content="text/html; charset=utf-8" />
   <link href="css/bootstrap.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
 <body>
 
@@ -41,62 +40,75 @@
 
     <div class="navbar navbar-static-top ">
       <nav class="navbar-inner">
-
         <ul class="nav">
-          <li><a href="admin/orders">Заказы</a></li>
-          <li><a href="admin/catalog">Каталог продукции</a></li>
-          <li><a href="admin/clients">Клиенты</a></li>
-          <li><a href="admin/feedbacks">Отзывы</a></li>
-          <li><a href="admin/login">Выйти</a></li>
-
+          <li><a href="/admin/">Главная</a></li>
+          <li><a href="/admin/catalog">Каталог продукции</a></li>
+          <li><a href="/admin/clients">Клиенты</a></li>
+          <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/">Перейти в интернет-магазин</a></li>
+          <li><a href="/admin/logout">Выйти</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- Container -->
+    <!-- Container - Add FeedBack-->
 
     <div class="container-fluid"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
-      <h4>Редактирование заказа</h4>
-      <form class="form-actions-edit-order" method="post" action="/admin/orders/save">
+      <h4>Добавление отзыва</h4>
+      <form class="form-actions-edit-order" method="post" action="/admin/feedbacks/save-new-feedback">
         <table>
           <tr>
-            <td><strong>Номер заказа</strong></td>
-            <td><input type="text" name="id" value="${order.id}" readonly></td>
+            <td><strong>Выберите товар, который хотите оценить</strong></td>
+            <td>
+                <select name="product" required>
+                  <c:forEach items="${products}" var="product">
+                    <option>${product.name}</option>
+                  </c:forEach>
+                </select>
+            </td>
           </tr>
           <tr>
             <td><strong>Дата</strong></td>
-            <td><input type="text" name="date" value="${order.date}" readonly></td>
+            <td><input type="text" name="data" required></td>
           </tr>
           <tr>
-            <td><strong>Имя клиента</strong></td>
-            <td><input type="text" name="FirstName" value="${order.client.FirstName}" readonly></td>
+            <td><strong>Выберите клиента, от которого отзыв будет оставлен</strong></td>
+            <td>
+                <select name="client" required>
+                  <c:forEach items="${clients}" var="client">
+                    <option>${client.name}  ${client.PhoneNumber}</option>
+                  </c:forEach>
+                </select>
+            </td>
           </tr>
           <tr>
-            <td><strong>Телефон</strong></td>
-            <td><input type="text" name="PhoneNumber" value="${order.client.PhoneNumber}" readonly></td>
+            <td><strong>Оценка от 1 до 5</strong></td>
+            <td>
+                <label class="radio inline">
+                  <input type="radio" name="evaluation" id="optionsRadios1" value="option1">1
+                </label>
+                <label class="radio inline">
+                    <input type="radio" name="evaluation" id="optionsRadios2" value="option2" >2
+                </label>
+                <label class="radio inline">
+                    <input type="radio" name="evaluation" id="optionsRadios3" value="option3" >3
+                </label>
+                <label class="radio inline">
+                    <input type="radio" name="evaluation" id="optionsRadios4" value="option4" >4
+                </label>
+                <label class="radio inline">
+                    <input type="radio" name="evaluation" id="optionsRadios5" value="option5" checked>5
+                </label>
+            </td>
           </tr>
           <tr>
-            <td><strong>Доставка</strong></td>
-            <td><input type="text" name="delivery" value="${order.delivery}"></td>
-          </tr>
-          <tr>
-            <td><strong>Коментарии</strong></td>
-            <td><input type="text" name="comments" value="${order.comments}"></td>
-          </tr>
-
-          <c:forEach items="${order.ProductsInCart}" var = "product">
-            <tr>
-              <td>Товар</td>
-              <td><input type="text" value="${product.id} | ${product.name} | ${product.Category} | ${product.price}
-              грн" readonly></td>
-            </tr>
-          </c:forEach>
-          <tr>
-            <td><strong>Сумма, грн</strong></td>
-            <td><input type="text" name="totalAmount" value="${order.totalAmount}" readonly></td>
+            <td><strong>Оставьте отзыв</strong></td>
+            <td>
+              <textarea class="span5" type="text" rows="10" name="feedback" required></textarea>
+            </td>
           </tr>
           <tr>
             <td></td>
@@ -108,5 +120,6 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </body>
 </html>

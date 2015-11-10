@@ -34,6 +34,10 @@ public interface BeautyDAO {
 
     public List<FeedBack> getFeedBacksByProductId(int ProductId);
 
+    public FeedBack getFeedBackById(int id);
+
+    public void saveFeedBack(FeedBack feedBack, int id);
+
     public List<Order> getOrders();
 
     public List<Client> getClients();

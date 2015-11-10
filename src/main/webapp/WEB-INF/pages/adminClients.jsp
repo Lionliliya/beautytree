@@ -88,7 +88,7 @@
           <br>
         </td>
       </tr>
-      </tr>
+
     </c:forEach>
     </tbody>
   </table>

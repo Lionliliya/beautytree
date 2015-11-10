@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 
 @Controller
 @RequestMapping("/admin")
@@ -192,6 +193,7 @@ public class AdminController {
         }
         return modelAndView;
     }
+
     @RequestMapping(value = "/clients/edit", method = RequestMethod.GET)
     public ModelAndView clientEdit (@RequestParam(value="id") int id,
                                     HttpServletRequest request) {
@@ -205,6 +207,7 @@ public class AdminController {
         }
         return modelAndView;
     }
+
     @RequestMapping(value = "/clients/save", method = RequestMethod.POST)
     public ModelAndView clientSave (@RequestParam(value="id") int id,
                                     @RequestParam(value="FirstName") String FirstName,
@@ -223,6 +226,7 @@ public class AdminController {
         }
         return  modelAndView;
     }
+
     @RequestMapping(value = "/clients/add")
     public ModelAndView clientAdd (HttpServletRequest request) {
         HttpSession session = request.getSession();
@@ -236,7 +240,7 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/clients/save-new-client")
+    @RequestMapping(value = "/clients/save-new-client", method = RequestMethod.POST)
     public ModelAndView saveNewClient (@RequestParam(value="FirstName") String FirstName,
                                        @RequestParam(value="PhoneNumber") String PhoneNumber,
                                        @RequestParam(value="Email") String Email,
@@ -255,16 +259,128 @@ public class AdminController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/feedbacks")
+    public ModelAndView adminFeedbacks (HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+
+            modelAndView.setViewName("adminFeedbacks");
+            modelAndView.addObject("feedbacks", beautyDAO.getAllFeedBacks());
+
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/byClientId", method = RequestMethod.POST)
+    public ModelAndView adminFeedbacksByClient (@RequestParam(value="id") int id,
+                                                HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("adminFeedbacks");
+            modelAndView.addObject("feedbacks", beautyDAO.getFeedBacksByClientId(id));
+
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/byProductId", method = RequestMethod.POST)
+    public ModelAndView adminFeedbacksByProduct (@RequestParam(value="id") int id,
+                                                HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("adminFeedbacks");
+            modelAndView.addObject("feedbacks", beautyDAO.getFeedBacksByProductId(id));
+
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/edit", method = RequestMethod.GET)
+    public ModelAndView feedbackEdit (@RequestParam(value="id") int id,
+                                    HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("feedbackEdit");
+            modelAndView.addObject("feedback", beautyDAO.getFeedBackById(id));
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/save", method = RequestMethod.POST)
+    public ModelAndView feedbackSave (  @RequestParam(value="id") int id,
+                                        @RequestParam(value="product") int productId,
+                                        @RequestParam(value="data") Date data,
+                                        @RequestParam(value = "client") int clientId,
+                                        @RequestParam(value="evaluation") int evaluation,
+                                        @RequestParam(value="feedback") String feedback,
+                                        HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            Client client = beautyDAO.getClient(clientId);
+            Product product = beautyDAO.getProductsById(productId).get(0);
+            FeedBack feedBack = new FeedBack(product, data, client, evaluation, feedback);
+            beautyDAO.saveFeedBack(feedBack, id);
+            modelAndView.setViewName("adminFeedbacks");
+            modelAndView.addObject("feedbacks", beautyDAO.getAllFeedBacks());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return  modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/add")
+    public ModelAndView addFeedBack(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("addFeedBack");
+            modelAndView.addObject("clients", beautyDAO.getClients());
+            modelAndView.addObject("products", beautyDAO.getAllProducts());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/feedbacks/save-new-feedback", method = RequestMethod.POST)
+    public ModelAndView saveNewClient (@RequestParam(value="product") Product product,
+                                       @RequestParam(value="data") Date data,
+                                       @RequestParam(value = "client") Client client,
+                                       @RequestParam(value="evaluation") int evaluation,
+                                       @RequestParam(value="feedback") String feedback,
+                                       HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            FeedBack feedBack = new FeedBack(product, data, client, evaluation, feedback);
+            beautyDAO.saveFeedBack(feedBack);
+            modelAndView.setViewName("adminFeedbacks");
+            modelAndView.addObject("feedbacks", beautyDAO.getAllFeedBacks());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
 
 
     public boolean checkStatus(HttpSession session){
         boolean checking;
         String status = (String)session.getAttribute("status");
-            if (status.equals("admin")) {
-                checking = true;
-            } else {
-                checking = false;
-            }
+        checking = status.equals("admin");
         return checking;
     }
 

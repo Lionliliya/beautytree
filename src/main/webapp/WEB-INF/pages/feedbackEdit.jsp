@@ -1,17 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: lionliliya
-  Date: 05.11.15
-  Time: 15:47
+  Date: 09.11.15
+  Time: 14:11
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <meta charset="utf-8">
   <meta lang="ru">
-  <title>BeautyTree || Интернет магазин кистей для макияжа</title>
+  <title>Administration_BT</title>
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
@@ -33,7 +33,6 @@
   <meta content="text/html; charset=utf-8" />
   <link href="css/bootstrap.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
 <body>
 
@@ -41,62 +40,55 @@
 
     <div class="navbar navbar-static-top ">
       <nav class="navbar-inner">
-
         <ul class="nav">
-          <li><a href="admin/orders">Заказы</a></li>
-          <li><a href="admin/catalog">Каталог продукции</a></li>
-          <li><a href="admin/clients">Клиенты</a></li>
-          <li><a href="admin/feedbacks">Отзывы</a></li>
-          <li><a href="admin/login">Выйти</a></li>
-
+          <li><a href="/admin/">Главная</a></li>
+          <li><a href="/admin/catalog">Каталог продукции</a></li>
+          <li><a href="/admin/clients">Клиенты</a></li>
+          <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/">Перейти в интернет-магазин</a></li>
+          <li><a href="/admin/logout">Выйти</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- Container -->
+    <!-- Container - FeedBack Client-->
 
-    <div class="container-fluid"><br>
+    <div class="container-fluid" align="middle"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
-      <h4>Редактирование заказа</h4>
-      <form class="form-actions-edit-order" method="post" action="/admin/orders/save">
+      <h4>Редактирование отзыва</h4>
+      <form class="form-actions-edit-order" method="post" action="/admin/feedbacks/save">
         <table>
           <tr>
-            <td><strong>Номер заказа</strong></td>
-            <td><input type="text" name="id" value="${order.id}" readonly></td>
+            <td><strong>ID отзыва</strong></td>
+            <td><input type="text" name="id" value="${feedback.id}" readonly></td>
+          </tr>
+          <tr>
+            <td><strong>ID товара</strong></td>
+            <td><input type="text" name="product" value="${feedback.product.id}" readonly></td>
           </tr>
           <tr>
             <td><strong>Дата</strong></td>
-            <td><input type="text" name="date" value="${order.date}" readonly></td>
+            <td><input type="text" name="data" value="${feedback.data}" required></td>
           </tr>
           <tr>
-            <td><strong>Имя клиента</strong></td>
-            <td><input type="text" name="FirstName" value="${order.client.FirstName}" readonly></td>
+            <td><strong>ID клиента</strong></td>
+            <td><input type="text" name="client" value="${feedback.client.id}" readonly></td>
           </tr>
           <tr>
-            <td><strong>Телефон</strong></td>
-            <td><input type="text" name="PhoneNumber" value="${order.client.PhoneNumber}" readonly></td>
+            <td><strong>Оценка</strong></td>
+            <td><input type="text" name="evaluation" value="${feedback.evaluation}"required>
+              <span class="help-inline">Пожалуйста, исправьте оценку</span>
+            </td>
           </tr>
           <tr>
-            <td><strong>Доставка</strong></td>
-            <td><input type="text" name="delivery" value="${order.delivery}"></td>
-          </tr>
-          <tr>
-            <td><strong>Коментарии</strong></td>
-            <td><input type="text" name="comments" value="${order.comments}"></td>
-          </tr>
-
-          <c:forEach items="${order.ProductsInCart}" var = "product">
-            <tr>
-              <td>Товар</td>
-              <td><input type="text" value="${product.id} | ${product.name} | ${product.Category} | ${product.price}
-              грн" readonly></td>
-            </tr>
-          </c:forEach>
-          <tr>
-            <td><strong>Сумма, грн</strong></td>
-            <td><input type="text" name="totalAmount" value="${order.totalAmount}" readonly></td>
+            <td><strong>Отзыв</strong></td>
+            <td>
+              <textarea class="span5" type="text" rows="10" name="feedback" placeholder="${feedback.feedback}" required>
+              </textarea>
+              <span class="help-inline">Пожалуйста, исправьте отзыв</span>
+            </td>
           </tr>
           <tr>
             <td></td>

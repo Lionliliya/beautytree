@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: lionliliya
-  Date: 19.10.15
-  Time: 14:38
+  Date: 09.11.15
+  Time: 12:57
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -36,11 +36,10 @@
 </head>
 <body>
 
-<!-- Top panel of navigation -->
+    <!-- Top panel of navigation -->
 
     <div class="navbar navbar-static-top ">
       <nav class="navbar-inner">
-
         <ul class="nav">
           <li><a href="/admin/">Главная</a></li>
           <li><a href="/admin/catalog">Каталог продукции</a></li>
@@ -48,59 +47,72 @@
           <li><a href="/admin/feedbacks">Отзывы</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/logout">Выйти</a></li>
-
         </ul>
       </nav>
     </div>
-    <div class="container-fluid"><br>
+
+    <!-- Container - All feedbacks -->
+
+    <div class="container-fluid" align="middle"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
-      <table class="table table-bordered table-striped">
+      <div class="row">
+        <div class="span6">
+            <form class="form-search" method="post" action="/admin/feedbacks/byClientId" >
+              <input type="text" name="id" class="input-medium search-query"><span class="help-block">Показать отзывы по
+              ID клиента</span>
+              <button type="submit" class="btn">Показать</button>
+            </form>
+        </div>
+        <div class="span6 pull-right">
+            <form class="form-search" method="post" action="/admin/feedbacks/byProductId" >
+              <input type="text" name="id" class="input-medium search-query"><span class="help-block">Показать отзывы по
+              ID товара</span>
+              <button type="submit" class="btn">Показать</button>
+            </form>
+        </div>
+      </div><br><br>
+
+      <table class="table table-bordered table-striped" style="font-size: 12px;">
         <thead>
         <tr>
-          <th>Номер заказа</th>
-          <th>Дата</th>
-          <th>Имя клиента</th>
-          <th>Телефон</th>
-          <th>Товары</th>
-          <th>Доставка</th>
-          <th>Адрес доставки</th>
-          <th>Коментарии</th>
-          <th>Сумма, грн</th>
-          <th>Изменить</th>
+          <th style="font-size: 12px;">Номер отзыва</th>
+          <th style="font-size: 12px;">Номер товара</th>
+          <th style="font-size: 12px;">Имя товара</th>
+          <th style="font-size: 12px;">Дата</th>
+          <th style="font-size: 12px;"> Номер клиента</th>
+          <th style="font-size: 12px;">Имя клиента</th>
+          <th style="font-size: 12px;">Номер телефона клиента</th>
+          <th style="font-size: 12px;">Оценка</th>
+          <th style="font-size: 12px;">Отзыв</th>
+          <th style="font-size: 12px;">Изменить</th>
         </tr>
         </thead>
         <tbody>
-        <c:forEach items="orders" var="order">
-            <tr>
-              <td>${order.Id}</td>
-              <td>${order.date}</td>
-              <td>${order.client.FirstName}</td>
-              <td>${order.client.PhoneNumber}</td>
-              <td>
-                <ol>
-                  <c:forEach items="${order.ProductsInCart}" var = "product">
-                    <li><p>${product.id} | ${product.name} | ${product.Category} | ${product.price} грн<p></li>
-                  </c:forEach>
-                </ol>
-              </td>
-              <td>${order.delivery}</td>
-              <td></td>
-              <td>${order.comments}</td>
-              <td>${order.totalAmount}</td>
-              <td><a href="/admin/orders/edit?id=${order.id}" class="btn btn-warning" type="submit">Редактировать</a>
-                <br><br><a href="/admin/orders/delete?id=${order.id}" class="btn btn-xs btn-success btn-block"
-                           type="submit">Удалить</a>
-              </td>
-            </tr>
-            </tr>
+        <c:forEach items="feedbacks" var="feedback">
+          <tr>
+            <td>${feedback.id}</td>
+            <td>${feedback.product.id}</td>
+            <td>${feedback.product.name}</td>
+            <td>${feedback.data}</td>
+            <td>${feedback.client.id}</td>
+            <td>${feedback.client.FirstName}</td>
+            <td>${feedback.client.PhoneNumber}</td>
+            <td>${feedback.evaluation}</td>
+            <td>${feedback.feedback}</td>
+            <td><a href="/admin/feedbacks/edit?id=${feedback.id}" class="btn btn-warning" type="submit">Редактировать</a>
+              <br>
+            </td>
+          </tr>
         </c:forEach>
         </tbody>
       </table>
+      <br>
+      <a href="/admin/feedbacks/add" class="btn btn-warning" type="submit">Добавить отзыв</a>
     </div>
-    <!--добавить список всех заказов-->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
