@@ -2,6 +2,7 @@ package ua.kiev.brushes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -79,6 +80,65 @@ public class AdminController {
             modelAndView.setViewName("adminLogin");
         }
         return modelAndView;
+    }
+
+    @RequestMapping(value = "/category/{name}")
+    public ModelAndView categoryCatalog(@PathVariable("name") String name,
+                                        HttpServletRequest request) {
+    HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+
+        if (checkStatus(session)) {
+            modelAndView.setViewName("categoryAdmin");
+            modelAndView.addObject("products", beautyDAO.getProductsByCategory(name));
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/product/edit",  method = RequestMethod.GET)
+    public ModelAndView productEdit(@RequestParam(value="id") int id,
+                                    HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("productEdit");
+            modelAndView.addObject("product", beautyDAO.getProductsById(id));
+            modelAndView.addObject("categories", beautyDAO.getAllCategories());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/product/save", method = RequestMethod.POST)
+    public  ModelAndView saveProduct(@RequestParam(value="id") int id,
+                                     @RequestParam(value="name") String name,
+                                     @RequestParam(value="price") int price,
+                                     @RequestParam(value="currency") String currency,
+                                     @RequestParam(value="productCategory") Category productCategory,
+                                     @RequestParam(value="amount") int amount,
+                                     @RequestParam(value="inStock") String inStock,
+                                     @RequestParam(value="description") String description,
+                                     @RequestParam(value="shortDesc") String shortDesc,
+                                     @RequestParam(value="smallimage") String smallimage,
+                                     @RequestParam(value="image1") String image1,
+                                     @RequestParam(value="image2") String image2,
+                                     @RequestParam(value="image3") String image3,
+                                     @RequestParam(value="image4") String image4,
+                                     HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            beautyDAO.saveProduct(id, name, price, currency, productCategory, amount, inStock, description, shortDesc,
+                    smallimage, image1, image2, image3, image4);
+            modelAndView.setViewName("adminCatalog");
+            modelAndView.addObject("categories", beautyDAO.getAllCategories());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return  modelAndView;
     }
 
     @RequestMapping("/catalog/addPage") /**добавление категорий и товаров, удаление**/

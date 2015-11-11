@@ -232,6 +232,35 @@ public class BeautyDAOImplementation implements BeautyDAO {
         }
     }
 
+    public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
+                            String inStock, String description, String shortDesc, String smallimage, String image1,
+                            String image2, String image3, String image4) {
+        Query query = entityManager.createQuery("SELECT a FROM Product a  WHERE a.id =:var", Order.class);
+        query.setParameter("var", id);
+        Product resultProduct = (Product) query.getResultList().get(0);
+        try{
+            entityManager.getTransaction().begin();
+            resultProduct.setName(name);
+            resultProduct.setPrice(price);
+            resultProduct.setCurrency(currency);
+            resultProduct.setProductCategory(productCategory);
+            resultProduct.setAmount(amount);
+            resultProduct.setInStock(inStock);
+            resultProduct.setDescription(description);
+            resultProduct.setShortDesc(shortDesc);
+            resultProduct.setSmallimage(smallimage);
+            resultProduct.setImage1(image1);
+            resultProduct.setImage2(image2);
+            resultProduct.setImage3(image3);
+            resultProduct.setImage4(image4);
+            entityManager.getTransaction().commit();
+        }
+        catch(Exception e){
+            entityManager.getTransaction().rollback();
+            e.printStackTrace();
+        }
+    }
+
     public void deleteOrder(int id) {
         Query query = entityManager.createQuery("SELECT a FROM Order a  WHERE a.id =:var", Order.class);
         query.setParameter("var", id);

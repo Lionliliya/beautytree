@@ -18,6 +18,10 @@ public interface BeautyDAO {
 
     public Category getCategoryByName(String  category);
 
+    public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
+                            String inStock, String description, String shortDesc, String smallimage, String image1,
+                            String image2, String image3, String image4);
+
     public List<Category> getAllCategories();
 
     public void saveProduct(Product product);

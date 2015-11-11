@@ -57,7 +57,7 @@
       <div class="navbar navbar-static-top">
         <nav class="navbar-inner">
           <ul class="nav">
-            <li><a href="/index"><i class="icon-home"></i>Главная</a></li>
+            <li><a href="/index">Главная</a></li>
             <li><a href="/news">Советы и новости</a></li>
             <li class="dropdown" position="absolute">
               <a href="/catalog" class="dropdown-toggle" data-toggle="dropdown">Асортимент<b class="caret"></b></a>
@@ -73,19 +73,19 @@
             <li><a href="/deliveryAndPayments">Доставка и оплата</a></li>
             <li><a href="/contacts">Контакты</a></li>
 
-            <li><a href="/cart"><i class="icon-shopping-cart"></i>Корзина(${cartSize})</a></li>
+            <li><a href="/cart">Корзина(${cartSize})</a></li>
 
           </ul>
-          <form class="navbar-form pull-right" action="/search" method="post">
-            <i class="icon-search"></i><input type="text" class="sapan2 search query" name="pattern"
-                                              placeholder="Введите имя товара" />
-          </form>
+            <form class="form-search pull-right" action="/search" method="post">
+                <input type="text" class="input-small search-query" name="pattern"
+                       placeholder="Поиск"/>
+            </form>
         </nav>
       </div>
 
       <!-- Container -->
 
-      <div class="container" align="middle">
+      <div class="container-fluid" align="middle">
           <header>
               <img src="img/logo.png" width="199" height="170" alt="Купить кисти для макияжа недорого киев"/>
               <div class="logo-text"><h1>BeautyTree</h1></div>

@@ -1,17 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: lionliliya
-  Date: 03.11.15
-  Time: 14:16
+  Date: 11.11.15
+  Time: 19:49
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
   <meta charset="utf-8">
   <meta lang="ru">
-  <title>BeautyTree || Интернет магазин кистей для макияжа</title>
+  <title>Administration_BT</title>
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
@@ -33,7 +33,6 @@
   <meta content="text/html; charset=utf-8" />
   <link href="css/bootstrap.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
 <body>
 
@@ -55,35 +54,51 @@
     </div>
 
     <!-- Container -->
+
     <div class="container" align="middle"><br>
       <div class="logo-text"><h1>BeautyTree</h1></div>
-      <p>Выберите категорию,  что бы просмотреть товары в ней</p>
-      <p>Что-бы изменить товар, нажмите на его имя в выпадающем списке категории, или перейдите по ссылке
-          "редактировать" на странице категории</p>
-      <div class="navbar">
-        <nav class="navbar-inner-admin">
-          <ul class="nav">
-              <c:forEach items="categories" var="category">
-                <li class="dropdown" position="absolute"><a href="/admin/category/${category.name}"
-                                                            class="dropdown-toggle" data-toggle="dropdown">
-                      ${category.name}<b class="caret"></b></a>
-                          <ul class="dropdown-menu">
-                            <c:forEach items="products" var="product">
-                                  <c:if test="${category.name eq product.category.CategoryName()}">
-                                    <li><a href="/admin/product/edit?id=${product.id}">${product.name}</a></li>
-                                  </c:if>
-                              </c:forEach>
-                          </ul>
-                </li>
-              </c:forEach>
-          </ul>
-        </nav>
-      </div>
+      <table class="table table-bordered table-striped" style="font-size: 12px;">
+        <thead>
+          <tr>
+            <th style="font-size: 12px;">Артикул</th>
+            <th style="font-size: 12px;">Фото</th>
+            <th style="font-size: 12px;">Имя товара</th>
+            <th style="font-size: 12px;">Цена</th>
+            <th style="font-size: 12px;">Валюта</th>
+            <th style="font-size: 12px;">Категория</th>
+            <th style="font-size: 12px;">Кол-во в уп.</th>
+            <th style="font-size: 12px;">Наличие</th>
+            <th style="font-size: 12px;">Описание</th>
+            <th style="font-size: 12px;">Короткое описание</th>
+            <th style="font-size: 12px;">Изменить</th>
+          </tr>
+        </thead>
+        <tbody>
+            <c:forEach items="products" var="product">
+              <tr>
+                <td>${product.id}</td>
+                <td><img src="/resources/${product.smallimage}" alt="${product.name}" width="170" height="106"></td>
+                <td>${product.name}</td>
+                <td>${product.price}</td>
+                <td>${product.currency}</td>
+                <td>${product.productCategory}</td>
+                <td>${product.amount}</td>
+                <td>${product.inStock}</td>
+                <td>${product.description}</td>
+                <td>${product.shortDesc}</td>
+                <td><a href="/admin/product/edit?id=${product.id}" class="btn btn-warning" type="submit">Редактировать</a>
+                  <br>
+                </td>
+              </tr>
+            </c:forEach>
+        </tbody>
+      </table>
       <a href="/admin/catalog/addPage" class="btn btn-warning" type="button">Добавить категорию</a><br><br>
       <a href="/admin/catalog/addPage" class="btn btn-warning" type="button">Добавить товар</a><br>
+
     </div>
 
- <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
