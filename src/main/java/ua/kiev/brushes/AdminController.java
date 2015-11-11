@@ -37,7 +37,7 @@ public class AdminController {
                                       HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
-        if((username.equals("lionliliya"))&&(password.equals("Mne_36_let"))) {
+        if((username.equals("username"))&&(password.equals("password"))) {
             session.setAttribute("status", "admin");
             modelAndView.setViewName("adminIndex");
             modelAndView.addObject("orders", beautyDAO.getOrders());
