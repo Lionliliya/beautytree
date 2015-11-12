@@ -15,17 +15,15 @@ public class ProductInCart implements Serializable{
     private int Product_In_Cart_id;
     @OneToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "PRODUCT_ID")
-    private int product_id;
+    private Product product_id;
     @Column(name="PRODUCT_NAME")
     private String name;
     @Column(name = "PRODUCT_CATEGORY")
     private String Category;
-    @Column(name="QUANTITY")
-    private int quantity;
+
     @Column(name="PRICE")
     private int price;
-    @Column(name="TOTAL_AMOUNT")
-    private int total_amount=quantity*price;
+
     @Column(name="CURRENCY")
     private String currency;
     @ManyToOne (fetch = FetchType.LAZY)
@@ -36,15 +34,15 @@ public class ProductInCart implements Serializable{
 
     public ProductInCart() {}
 
-    public ProductInCart(int product_id, String category, String smallimage, String name, int quantity, int price,
-                         int total_amount, String currency) {
+    public ProductInCart(Product product_id, String category, String smallimage, String name,  int price,
+                          String currency) {
         this.product_id = product_id;
         Category = category;
         this.smallimage = smallimage;
         this.name = name;
-        this.quantity = quantity;
+
         this.price = price;
-        this.total_amount = total_amount;
+
         this.currency = currency;
     }
 
@@ -56,11 +54,11 @@ public class ProductInCart implements Serializable{
         Product_In_Cart_id = product_In_Cart_id;
     }
 
-    public int getId() {
+    public Product getId() {
         return product_id;
     }
 
-    public void setId(int product_id) {
+    public void setId(Product product_id) {
         this.product_id = product_id;
     }
 
@@ -88,13 +86,9 @@ public class ProductInCart implements Serializable{
         this.name = name;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
+
+
 
     public int getPrice() {
         return price;
@@ -104,13 +98,8 @@ public class ProductInCart implements Serializable{
         this.price = price;
     }
 
-    public int getTotal_amount() {
-        return total_amount;
-    }
 
-    public void setTotal_amount(int total_amount) {
-        this.total_amount = total_amount;
-    }
+
 
     public String getCurrency() {
         return currency;

@@ -28,6 +28,7 @@ public class Order implements Serializable{
     @JoinTable(name = "ORDER_PRODUCTCART", joinColumns = {@JoinColumn(name = "ORDER_ID", referencedColumnName = "id")},
             inverseJoinColumns =  { @JoinColumn(name = "PRODUCTCART_ID", referencedColumnName = "Product_In_Cart_id") })
     private List<ProductInCart> ProductsInCart;
+    @Column(name="TOTAL_AMOUNT")
     private int totalAmount = Amount(ProductsInCart);
 
     public Order() {}

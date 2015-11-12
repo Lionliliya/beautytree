@@ -9,7 +9,7 @@ import java.util.Date;
  * Created by lionliliya on 09.10.15.
  */
 @Entity
-@Table(name="feedbacks")
+@Table(name="Feedbacks")
 public class FeedBack implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id

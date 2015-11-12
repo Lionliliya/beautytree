@@ -162,19 +162,20 @@ public class ClientController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/cart", method = RequestMethod.POST) //на странице заказов при нажатии кнопки оформить заказ
+    @RequestMapping(value = "/cart", method = RequestMethod.POST) //на странице товара при нажатии кнопки добавить в корзину
     public ModelAndView cart(@RequestParam(value="id") int id,
-                             @RequestParam(value="Category") String Category,
+                             @RequestParam(value="productCategory") String Category,
                              @RequestParam(value="smallimage") String smallimage,
                              @RequestParam(value="name") String name,
-                             @RequestParam(value="quantity") int quantity,
+
                              @RequestParam(value="price") int price,
-                             @RequestParam(value="total_amount") int total_amount,
+
                              @RequestParam(value="currency") String currency,
                              HttpServletRequest request) {
         HttpSession session = request.getSession();
         checkSession(session);
-        ProductInCart productInCart = new ProductInCart(id, Category, smallimage, name, quantity, price, total_amount, currency);
+        Product product = beautyDAO.getProductsById(id).get(0);
+        ProductInCart productInCart = new ProductInCart(product, Category, smallimage, name, price, currency);
         ArrayList<ProductInCart> ProductsInCart = (ArrayList<ProductInCart>) session.getAttribute("ProductsInCart");
         ProductsInCart.add(productInCart);
         session.setAttribute("ProductsInCart", ProductsInCart);

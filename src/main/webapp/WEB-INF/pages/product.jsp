@@ -112,6 +112,15 @@
             <br style="clear:left"/></div>
 
           <div class="span6" style="background: #d4ce6c; border-radius: 6px; box-shadow: 10px 10px 5px #888888;"><h4>${product.name}</h4>
+            <form action = "/cart" method = post>
+              <input type = hidden name = "id" value = "${product.id}" >
+              <input type = hidden name = "productCategory" value = "${product.productCategory.name}" >
+              <input type = hidden name = "smallimage" value = "${product.smallimage}" >
+              <input type = hidden name = "name" value = "${product.name}" >
+              <input type = hidden name = "price" value = "${product.price}" >
+              <input type = hidden name = "currency" value = "${product.currency}" >
+
+
             <p>Артикул: ${product.id}</p>
             <p><strong>Оценка ${product.mark} из 5</strong></p>
             <p>Категория: ${product.productCategory.name}</p>
@@ -122,10 +131,11 @@
               <div class="span6"><a href="#" class="btn btn-warning" type="button">Нет в наличии</a></div>
             </c:if>
             <c:if test="${product.inStock eq 'да'}">
-              <a href="/clearcart" class="btn btn-warning" type="button">Добавить в корзину</a>
+              <a href="/cart" class="btn btn-warning" type="button">Добавить в корзину</a>
                 <br><br>
 
             </c:if>
+            </form>
           </div>
         </div>
         <div class="product-description">
