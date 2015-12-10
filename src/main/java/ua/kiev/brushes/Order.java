@@ -15,21 +15,17 @@ public class Order implements Serializable{
     @Id
     @GeneratedValue
     private int id;
-    @Column(name="DATA")
+    @Column(nullable = false)
     private Date date;
-    @Column(name="DELIVERY")
+    @Column(nullable = false)
     private String delivery;
-    @Column(name="COMMENTS")
     private String comments;
-    @OneToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "CLIENT_ID")
+    @OneToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "client_id")
     private Client client;
-    @OneToMany(mappedBy = "order", cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinTable(name = "ORDER_PRODUCTCART", joinColumns = {@JoinColumn(name = "ORDER_ID", referencedColumnName = "id")},
-            inverseJoinColumns =  { @JoinColumn(name = "PRODUCTCART_ID", referencedColumnName = "Product_In_Cart_id") })
-    private List<ProductInCart> ProductsInCart;
-    @Column(name="TOTAL_AMOUNT")
-    private int totalAmount = Amount(ProductsInCart);
+    @OneToMany(mappedBy = "order",cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ProductInCart> productsInCart;
+    private int totalAmount = Amount(productsInCart);
 
     public Order() {}
 
@@ -38,16 +34,24 @@ public class Order implements Serializable{
         this.delivery = delivery;
         this.comments = comments;
         this.client = client;
-        ProductsInCart = productsInCart;
+        this.productsInCart = productsInCart;
         this.totalAmount = totalAmount;
     }
 
-    public int Amount(List<ProductInCart> ProductsInCart) {
-        int totalAmount = 0;
-        for (int i = 0; i < ProductsInCart.size(); i++) {
-            totalAmount += ProductsInCart.get(i).getPrice();
+    public int Amount(List<ProductInCart> productsInCart) {
+        if (productsInCart == null) {
+            return 0;
+        } else {
+            int totalAmount = 0;
+            for (int i = 0; i < productsInCart.size(); i++) {
+                totalAmount += productsInCart.get(i).getPrice();
+            }
+            return totalAmount;
         }
-        return totalAmount;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public int getId() {
@@ -91,11 +95,11 @@ public class Order implements Serializable{
     }
 
     public List<ProductInCart> getProductsInCart() {
-        return ProductsInCart;
+        return productsInCart;
     }
 
     public void setProductsInCart(List<ProductInCart> productsInCart) {
-        ProductsInCart = productsInCart;
+        productsInCart = productsInCart;
     }
 
     public int getTotalAmount() {

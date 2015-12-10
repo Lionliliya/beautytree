@@ -7,37 +7,34 @@ import java.io.Serializable;
  * Created by lionliliya on 09.10.15.
  */
 @Entity
-@Table(name="Product_In_Cart")
+@Table(name="Products_In_Cart")
 public class ProductInCart implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
-    private int Product_In_Cart_id;
+    private int product_In_Cart_id;
     @OneToOne (fetch = FetchType.LAZY)
-    @JoinColumn(name = "PRODUCT_ID")
+    @JoinColumn(name = "product_id")
     private Product product_id;
-    @Column(name="PRODUCT_NAME")
+    @Column(name="Pname", nullable = false)
     private String name;
-    @Column(name = "PRODUCT_CATEGORY")
-    private String Category;
-
-    @Column(name="PRICE")
+    @Column(nullable = false)
+    private String category;
+    @Column(nullable = false)
     private int price;
-
-    @Column(name="CURRENCY")
     private String currency;
     @ManyToOne (fetch = FetchType.LAZY)
-    @JoinColumn(name = "ORDER_ID")
+    @JoinColumn(name = "order_id", nullable = false)
     private Order order;
-    @Column(name = "SMALL_IMAGE")
     private String smallimage;
+
 
     public ProductInCart() {}
 
     public ProductInCart(Product product_id, String category, String smallimage, String name,  int price,
                           String currency) {
         this.product_id = product_id;
-        Category = category;
+        this.category = category;
         this.smallimage = smallimage;
         this.name = name;
 
@@ -46,12 +43,16 @@ public class ProductInCart implements Serializable{
         this.currency = currency;
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     public int getProduct_In_Cart_id() {
-        return Product_In_Cart_id;
+        return product_In_Cart_id;
     }
 
     public void setProduct_In_Cart_id(int product_In_Cart_id) {
-        Product_In_Cart_id = product_In_Cart_id;
+        product_In_Cart_id = product_In_Cart_id;
     }
 
     public Product getId() {
@@ -63,11 +64,11 @@ public class ProductInCart implements Serializable{
     }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        category = category;
     }
 
     public String getSmallimage() {

@@ -11,30 +11,27 @@ import java.util.Date;
 @Entity
 @Table(name="Feedbacks")
 public class FeedBack implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
     private int id;
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "PRODUCT_ID")
+    @JoinColumn(name = "product_id")
     private Product product;
-    @Column(name = "DATA")
-    private Date data;
+    private Date date;
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "CLIENT_ID")
+    @JoinColumn(name = "client_id")
     private Client client;
-    @Column(name = "EVALUATION")
     private int evaluation;
-    @Column(name = "DESCRIPTION")
     private String feedback;
 
 
-    public FeedBack() {
-    }
+    public FeedBack() {}
 
-    public FeedBack(Product product, Date data, Client client, int evaluation, String feedback) {
+    public FeedBack(Product product, Date date, Client client, int evaluation, String feedback) {
         this.product = product;
-        this.data = data;
+        this.date = date;
         this.client = client;
         this.evaluation = evaluation;
         this.feedback = feedback;
@@ -60,12 +57,12 @@ public class FeedBack implements Serializable {
         this.product = product;
     }
 
-    public Date getData() {
-        return data;
+    public Date getDate() {
+        return date;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public Client getClient() {

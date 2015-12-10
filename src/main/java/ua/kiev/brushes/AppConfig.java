@@ -5,6 +5,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
@@ -18,7 +20,7 @@ import javax.persistence.Persistence;
 @Configuration
 @ComponentScan("ua.kiev.brushes")
 @EnableWebMvc
-public class AppConfig {
+public class AppConfig extends WebMvcConfigurerAdapter {
 
 
         @Bean
@@ -35,6 +37,7 @@ public class AppConfig {
         @Bean
         public UrlBasedViewResolver setupViewResolver() {
             UrlBasedViewResolver resolver = new UrlBasedViewResolver();
+            resolver.setContentType("text/html;charset=UTF-8");
             resolver.setPrefix("/WEB-INF/pages/");
             resolver.setSuffix(".jsp");
             resolver.setViewClass(JstlView.class);
@@ -46,5 +49,11 @@ public class AppConfig {
         public CommonsMultipartResolver multipartResolver() {
             return new CommonsMultipartResolver();
         }
+
+
+    @Override
+    public void addResourceHandlers(final ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+    }
     }
 

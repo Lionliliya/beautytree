@@ -7,15 +7,17 @@ import java.io.Serializable;
  * Created by lionliliya on 08.10.15.
  */
 @Entity
-@Table(name="Category")
+@Table(name="Categories")
 public class Category implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
     private int id;
-    @Column(name="NAME")
+
+    @Column(name="Cname", nullable = false)
     private String name;
-    @Column(name="INFO")
+
     private String info;
 
     public Category() {}

@@ -11,35 +11,36 @@ import java.util.List;
 @Entity
 @Table(name="Clients")
 public class Client implements Serializable{
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
     private int id;
-    @Column(name="FIRST_NAME")
-    private String FirstName;
-    @Column(name="PHONE_NUMBER")
-    private String PhoneNumber;
-    @Column(name="EMAIL")
-    private String Email;
+    @Column(name= "FirstName", nullable = false)
+    private String firstName;
+    @Column(name="PhoneNumber", nullable = false)
+    private String phoneNumber;
+    @Column(name="Email", nullable = false)
+    private String email;
+
     @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="client")
-    @JoinTable(name = "CLIENT_FEEDBACK", joinColumns = {@JoinColumn(name = "CLIENT_ID", referencedColumnName = "id")},
-            inverseJoinColumns =  { @JoinColumn(name = "FEEDBACK_ID", referencedColumnName = "id") })
     private List<FeedBack> feedBacks;
 
     public Client() {}
 
-    public Client(String firstName, String phoneNumber, String email, List<FeedBack> feedBacks) {
-        FirstName = firstName;
-        PhoneNumber = phoneNumber;
-        Email = email;
+    public Client(String firstName, String phoneNumber, List<FeedBack> feedBacks, String email) {
+        this.firstName = firstName;
+        this.phoneNumber = phoneNumber;
         this.feedBacks = feedBacks;
+        this.email = email;
     }
 
     public Client(String firstName, String phoneNumber, String email) {
-        FirstName = firstName;
-        PhoneNumber = phoneNumber;
-        Email = email;
+        this.firstName = firstName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -53,27 +54,27 @@ public class Client implements Serializable{
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getPhoneNumber() {
-        return PhoneNumber;
+        return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        PhoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public List<FeedBack> getFeedBacks() {

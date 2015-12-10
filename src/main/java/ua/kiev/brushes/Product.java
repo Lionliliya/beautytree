@@ -10,44 +10,38 @@ import java.util.List;
 @Entity
 @Table(name="Products")
 public class Product implements Serializable{
+
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue
     private int id;
-    @Column(name="NAME")
+    @Column(name="Pname", nullable = false)
     private String name;
-    @Column(name="PRICE")
+    @Column(nullable = false)
     private int price;
-    @Column(name="CURRENCY")
     private String currency;
-    @OneToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "CATEGORY_ID")
+    @OneToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false)
     private Category productCategory;
-    @Column(name="AMOUNT")
+    @Column(nullable = false)
     private int amount;
-    @Column(name="AVAILABILITY")
+    @Column(nullable = false, length = 225)
     private String inStock;
-    @Column(name="DESCRIPTION")
+    @Column(nullable = false)
     private String description;
-    @Column(name="SHORT_DESCRIPTION")
     private String shortDesc;
-    @Column(name="IMAGE_SMALL")
     private String smallimage;
-    @Column(name="IMAGE_1")
     private String image1;
-    @Column(name="IMAGE_2")
     private String image2;
-    @Column(name="IMAGE_3")
     private String image3;
-    @Column(name="IMAGE_4")
     private String image4;
     @OneToMany(mappedBy = "product", cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinTable(name = "PRODUCT_FEEDBACK", joinColumns = {@JoinColumn(name = "PRODUCT_ID", referencedColumnName = "id")},
-            inverseJoinColumns =  { @JoinColumn(name = "FEEDBACK_ID", referencedColumnName = "id") })
     private List<FeedBack> feedBackList;
-    @Column(name="FeedBack-Mark")
+    @Column(name="FeedBack_mark", precision=2, scale = 2)
     private double mark = getValue(feedBackList);
 
+    /*нужно ли писать метод addFeedback, для добавления его в feedBackList и одновременно приписуя продукт к ентити Отзыв */
     public Product() {}
 
     public Product(String name, int price, String currency, Category productCategory, int amount, String inStock,
@@ -70,12 +64,16 @@ public class Product implements Serializable{
 
 
     public double getValue (List<FeedBack> feedBackList) {
-        double mark = 0;
-            for (FeedBack a : feedBackList)  {
-                mark+=a.getEvaluation();
+        if (feedBackList==null) {
+            return 0;
+        } else {
+            double mark = 0;
+            for (FeedBack a : feedBackList) {
+                mark += a.getEvaluation();
             }
-            mark/=feedBackList.size();
-        return mark;
+            mark /= feedBackList.size();
+            return mark;
+        }
     }
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -208,4 +206,6 @@ public class Product implements Serializable{
     public void setMark(double mark) {
         this.mark = mark;
     }
+
+
 }

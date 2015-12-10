@@ -12,7 +12,7 @@ public interface BeautyDAO {
 
     public List<Product> getProductsByCategory(String CategoryName);
 
-    public List<Product> getProductsById(int id);
+    public Product getProductById(int id);
 
     public List<Product> search(String pattern);
 

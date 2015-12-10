@@ -21,16 +21,20 @@ public class BeautyDAOImplementation implements BeautyDAO {
     /**select all of products of proper category**/
     @Override
     public List<Product> getProductsByCategory(String CategoryName) {
+        Query findId = entityManager.createQuery("SELECT c FROM Category c WHERE c.name =:parameter", Category.class);
+        findId.setParameter("parameter", CategoryName);
+        Category withId = (Category)findId.getResultList().get(0);
+        int id = withId.getId();
         Query query = entityManager.createQuery("SELECT a FROM Product a WHERE a.productCategory =:var", Product.class);
-        query.setParameter("var", CategoryName);
+        query.setParameter("var", id);
         return (List<Product>)query.getResultList();
     }
 
     @Override
-    public List<Product> getProductsById(int id) {
+    public Product getProductById(int id) {
         Query query = entityManager.createQuery("SELECT a FROM Product a WHERE a.id =:var", Product.class);
         query.setParameter("var", id);
-        return (List<Product>)query.getResultList();
+        return (Product)query.getResultList().get(0);
     }
     @Override
     public List<Product> search(String pattern){
@@ -54,7 +58,7 @@ public class BeautyDAOImplementation implements BeautyDAO {
     public Category getCategoryByName(String  category) {
         Query query = entityManager.createQuery("SELECT a FROM Category a WHERE a.name =:pattern", Category.class);
         query.setParameter("pattern", category);
-        return  (Category) query.getResultList().get(0);
+        return  (Category)query.getResultList().get(0);
     }
 
     @Override
@@ -133,7 +137,7 @@ public class BeautyDAOImplementation implements BeautyDAO {
         FeedBack resultFeedBack = (FeedBack) query.getResultList().get(0);
         try{
             entityManager.getTransaction().begin();
-            resultFeedBack.setData(feedBack.getData());
+            resultFeedBack.setDate(feedBack.getDate());
             resultFeedBack.setEvaluation(feedBack.getEvaluation());
             resultFeedBack.setFeedback(feedBack.getFeedback());
             entityManager.getTransaction().commit();
@@ -169,10 +173,10 @@ public class BeautyDAOImplementation implements BeautyDAO {
         return (Client) query.getResultList().get(0);
     }
 
-    public Client findClientByNameAndEmail(String FirstName, String Email) {
-        Query query = entityManager.createQuery("SELECT a FROM Client a WHERE a.FirstName =:var1 AND a.Email =:var2", Client.class);
-        query.setParameter("var1", FirstName);
-        query.setParameter("var2", Email);
+    public Client findClientByNameAndEmail(String firstName, String email) {
+        Query query = entityManager.createQuery("SELECT a FROM Client a WHERE a.firstName =:var1 AND a.email =:var2", Client.class);
+        query.setParameter("var1", firstName);
+        query.setParameter("var2", email);
         return (Client) query.getResultList().get(0);
     }
 
@@ -235,7 +239,7 @@ public class BeautyDAOImplementation implements BeautyDAO {
     public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
                             String inStock, String description, String shortDesc, String smallimage, String image1,
                             String image2, String image3, String image4) {
-        Query query = entityManager.createQuery("SELECT a FROM Product a  WHERE a.id =:var", Order.class);
+        Query query = entityManager.createQuery("SELECT a FROM Product a  WHERE a.id =:var", Product.class);
         query.setParameter("var", id);
         Product resultProduct = (Product) query.getResultList().get(0);
         try{

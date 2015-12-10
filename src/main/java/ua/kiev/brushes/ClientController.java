@@ -16,6 +16,7 @@ import java.util.List;
 
 /**
  * Created by lionliliya on 10.10.15.
+ * Last edit on 24.11.15
  */
 @Controller
 @RequestMapping("/")
@@ -164,7 +165,7 @@ public class ClientController {
 
     @RequestMapping(value = "/cart", method = RequestMethod.POST) //на странице товара при нажатии кнопки добавить в корзину
     public ModelAndView cart(@RequestParam(value="id") int id,
-                             @RequestParam(value="productCategory") String Category,
+                             @RequestParam(value="productCategory") String category,
                              @RequestParam(value="smallimage") String smallimage,
                              @RequestParam(value="name") String name,
 
@@ -174,8 +175,8 @@ public class ClientController {
                              HttpServletRequest request) {
         HttpSession session = request.getSession();
         checkSession(session);
-        Product product = beautyDAO.getProductsById(id).get(0);
-        ProductInCart productInCart = new ProductInCart(product, Category, smallimage, name, price, currency);
+        Product product = beautyDAO.getProductById(id);
+        ProductInCart productInCart = new ProductInCart(product, category, smallimage, name, price, currency);
         ArrayList<ProductInCart> ProductsInCart = (ArrayList<ProductInCart>) session.getAttribute("ProductsInCart");
         ProductsInCart.add(productInCart);
         session.setAttribute("ProductsInCart", ProductsInCart);
@@ -208,36 +209,36 @@ public class ClientController {
         HttpSession session = request.getSession();
         checkSession(session);
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("products", beautyDAO.getProductsById(id));
+        modelAndView.addObject("products", beautyDAO.getProductById(id));
         modelAndView.addObject("cartSize", session.getAttribute("cartSize"));
         modelAndView.setViewName("product");
         return modelAndView;
     }
 
     @RequestMapping(value = "/product/{id}", method = RequestMethod.POST)
-    public ModelAndView product(@RequestParam(value="FirstName") String FirstName,
+    public ModelAndView product(@RequestParam(value="firstName") String firstName,
                                 @PathVariable("id") int id,
-                                @RequestParam(value="Email") String Email,
+                                @RequestParam(value="email") String email,
                                 @RequestParam(value="evaluation") int evaluation,
                                 @RequestParam(value="feedback") String feedback,
                                 HttpServletRequest request) {
         HttpSession session = request.getSession();
         checkSession(session);
-        Product product = beautyDAO.getProductsById(id).get(0);
-        Client client = beautyDAO.findClientByNameAndEmail(FirstName, Email);
+        Product product = beautyDAO.getProductById(id);
+        Client client = beautyDAO.findClientByNameAndEmail(firstName, email);
         FeedBack feedBack = new FeedBack(product, new Date(), client, evaluation, feedback);
         beautyDAO.saveFeedBack(feedBack);
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("products", beautyDAO.getProductsById(id));
+        modelAndView.addObject("products", beautyDAO.getProductById(id));
         modelAndView.addObject("cartSize", session.getAttribute("cartSize"));
         modelAndView.setViewName("product");
         return modelAndView;
     }
 
     @RequestMapping(value = "/ordering", method = RequestMethod.POST)
-    public ModelAndView ordering(@RequestParam(value="FirstName") String FirstName,
-                                 @RequestParam(value="PhoneNumber") String PhoneNumber,
-                                 @RequestParam(value="Email") String Email,
+    public ModelAndView ordering(@RequestParam(value="firstName") String firstName,
+                                 @RequestParam(value="phoneNumber") String phoneNumber,
+                                 @RequestParam(value="email") String email,
                                  @RequestParam(value="delivery") String delivery,
                                  @RequestParam(value="comments") String comments,
                                  HttpServletRequest request) {
@@ -246,16 +247,16 @@ public class ClientController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("ProductsInCart", session.getAttribute("ProductsInCart"));
         modelAndView.addObject("cartSize", 0);
-        Client client = new Client(FirstName, PhoneNumber, Email);
+        Client client = new Client(firstName, phoneNumber, email);
         modelAndView.addObject("client", client);
         List<ProductInCart> ProductsCart = (ArrayList<ProductInCart>)session.getAttribute("ProductsInCart");
         int amount = 0;
-        for (int i = 0; i < ProductsCart.size(); i++) {
-            amount += ProductsCart.get(i).getPrice();
+        for (ProductInCart aProductsCart1 : ProductsCart) {
+            amount += aProductsCart1.getPrice();
         }
         Order order = new Order(new Date(), delivery, comments, client, ProductsCart, amount);
-        for (int i = 0; i < ProductsCart.size(); i++) {
-            ProductsCart.get(i).setOrder(order);
+        for (ProductInCart aProductsCart : ProductsCart) {
+            aProductsCart.setOrder(order);
         }
         beautyDAO.saveOrder(order);
         modelAndView.addObject("orderId", order.getId());
@@ -288,7 +289,7 @@ public class ClientController {
             ProductsInCart.get(0);
         }
         catch (Exception e) {
-            ArrayList<ProductInCart> ProductsInCart = new ArrayList<ProductInCart>();
+            ArrayList<ProductInCart> ProductsInCart = new ArrayList<>();
             session.setAttribute("ProductsInCart", ProductsInCart);
             session.setAttribute("cartSize", ProductsInCart.size());
         }
@@ -297,8 +298,8 @@ public class ClientController {
     public int totalAmount(HttpSession session) {
         int totalAmount = 0;
         ArrayList<ProductInCart> ProductsInCart = (ArrayList<ProductInCart>) session.getAttribute("ProductsInCart");
-        for (int i = 0; i < ProductsInCart.size(); i++) {
-            totalAmount += ProductsInCart.get(i).getPrice();
+        for (ProductInCart aProductsInCart : ProductsInCart) {
+            totalAmount += aProductsInCart.getPrice();
         }
         return totalAmount;
     }

@@ -38,7 +38,7 @@ public class AdminController {
                                       HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
-        if((username.equals("username"))&&(password.equals("password"))) {
+        if((username.equals("lionliliya"))&&(password.equals("Mne_23_let"))) {
             session.setAttribute("status", "admin");
             modelAndView.setViewName("adminIndex");
             modelAndView.addObject("orders", beautyDAO.getOrders());
@@ -104,7 +104,7 @@ public class AdminController {
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
             modelAndView.setViewName("productEdit");
-            modelAndView.addObject("product", beautyDAO.getProductsById(id));
+            modelAndView.addObject("product", beautyDAO.getProductById(id));
             modelAndView.addObject("categories", beautyDAO.getAllCategories());
         } else {
             modelAndView.setViewName("adminLogin");
@@ -117,7 +117,7 @@ public class AdminController {
                                      @RequestParam(value="name") String name,
                                      @RequestParam(value="price") int price,
                                      @RequestParam(value="currency") String currency,
-                                     @RequestParam(value="productCategory") Category productCategory,
+                                     @RequestParam(value="productCategory") String productCategory,
                                      @RequestParam(value="amount") int amount,
                                      @RequestParam(value="inStock") String inStock,
                                      @RequestParam(value="description") String description,
@@ -131,7 +131,8 @@ public class AdminController {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
-            beautyDAO.saveProduct(id, name, price, currency, productCategory, amount, inStock, description, shortDesc,
+            Category category = beautyDAO.getCategoryByName(productCategory);
+            beautyDAO.saveProduct(id, name, price, currency, category, amount, inStock, description, shortDesc,
                     smallimage, image1, image2, image3, image4);
             modelAndView.setViewName("adminCatalog");
             modelAndView.addObject("categories", beautyDAO.getAllCategories());
@@ -270,14 +271,14 @@ public class AdminController {
 
     @RequestMapping(value = "/clients/save", method = RequestMethod.POST)
     public ModelAndView clientSave (@RequestParam(value="id") int id,
-                                    @RequestParam(value="FirstName") String FirstName,
-                                    @RequestParam(value="PhoneNumber") String PhoneNumber,
-                                    @RequestParam(value="Email") String Email,
+                                    @RequestParam(value="firstName") String firstName,
+                                    @RequestParam(value="phoneNumber") String phoneNumber,
+                                    @RequestParam(value="email") String email,
                                     HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
-            Client client = new Client(FirstName, PhoneNumber, Email);
+            Client client = new Client(firstName, phoneNumber, email);
             beautyDAO.saveClient(client, id);
             modelAndView.setViewName("adminClients");
             modelAndView.addObject("clients", beautyDAO.getClients());
@@ -301,16 +302,16 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/clients/save-new-client", method = RequestMethod.POST)
-    public ModelAndView saveNewClient (@RequestParam(value="FirstName") String FirstName,
-                                       @RequestParam(value="PhoneNumber") String PhoneNumber,
-                                       @RequestParam(value="Email") String Email,
+    public ModelAndView saveNewClient (@RequestParam(value="firstName") String firstName,
+                                       @RequestParam(value="phoneNumber") String phoneNumber,
+                                       @RequestParam(value="email") String email,
                                        HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
-            Client client = new Client (FirstName, PhoneNumber, Email);
+            Client client = new Client (firstName, phoneNumber, email);
             beautyDAO.addClient(client);
-            modelAndView.setViewName("adminClient");
+            modelAndView.setViewName("adminClients");
             modelAndView.addObject("clients", beautyDAO.getClients());
 
         } else {
@@ -390,7 +391,7 @@ public class AdminController {
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
             Client client = beautyDAO.getClient(clientId);
-            Product product = beautyDAO.getProductsById(productId).get(0);
+            Product product = beautyDAO.getProductById(productId);
             FeedBack feedBack = new FeedBack(product, data, client, evaluation, feedback);
             beautyDAO.saveFeedBack(feedBack, id);
             modelAndView.setViewName("adminFeedbacks");
@@ -415,17 +416,18 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/feedbacks/save-new-feedback", method = RequestMethod.POST)
-    public ModelAndView saveNewClient (@RequestParam(value="product") Product product,
-                                       @RequestParam(value="data") Date data,
-                                       @RequestParam(value = "client") Client client,
+    @RequestMapping(value = "/feedbacks/saveNewFeedback", method = RequestMethod.POST)
+    public ModelAndView saveNewClient (@RequestParam(value="product") int id,
+                                       @RequestParam(value = "client") int idclient,
                                        @RequestParam(value="evaluation") int evaluation,
                                        @RequestParam(value="feedback") String feedback,
                                        HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
         if (checkStatus(session)) {
-            FeedBack feedBack = new FeedBack(product, data, client, evaluation, feedback);
+            Product resultproduct = beautyDAO.getProductById(id);
+            Client resultclient = beautyDAO.getClient(idclient);
+            FeedBack feedBack = new FeedBack(resultproduct, new Date(), resultclient, evaluation, feedback);
             beautyDAO.saveFeedBack(feedBack);
             modelAndView.setViewName("adminFeedbacks");
             modelAndView.addObject("feedbacks", beautyDAO.getAllFeedBacks());
@@ -440,7 +442,8 @@ public class AdminController {
     public boolean checkStatus(HttpSession session){
         boolean checking;
         String status = (String)session.getAttribute("status");
-        checking = status.equals("admin");
+        if (status=="admin") checking = true;
+        else checking=false;
         return checking;
     }
 

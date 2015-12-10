@@ -110,7 +110,7 @@
 
 @media (min-width: 1200px) {
   .row {
-    margin-left: -30px;
+    margin-left: 0px;
     *zoom: 1;
   }
   .row:before,
@@ -125,13 +125,23 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: 0px;
   }
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
     width: 1170px;
+  }
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+
   }
   .span12 {
     width: 1170px;
@@ -483,6 +493,20 @@
   .navbar-fixed-bottom .container {
     width: 724px;
   }
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    width: 724px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  #push,
+  #footer {
+    height: 300px;
+  }
   .span12 {
     width: 724px;
   }
@@ -825,6 +849,26 @@
   .container {
     width: auto;
   }
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  #push,
+  #footer {
+    height: auto;
+  }
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .row-fluid {
     width: 100%;
   }
@@ -970,6 +1014,15 @@
   .navbar .container {
     width: auto;
     padding: 0;
+  }
+  #wrap {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+   }
+  #push,
+  #footer {
+    height: auto;
   }
   .navbar .brand {
     padding-right: 10px;
