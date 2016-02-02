@@ -50,6 +50,8 @@
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/login">Выйти</a></li>
 
@@ -59,15 +61,15 @@
 
     <!-- Container -->
     <br><br>
-    <div class="container" align="middle"><br>
+    <div class="container" align="middle" style="padding: 5px 10px;"><br>
       <div class="logo-text"><h1>BeautyTree</h1></div>
       <c:if test="${products.size() eq 0}"><div class="span12"><article class="art-head"><h2>У вас нет товаров</h2></article></div></c:if>
       <c:if test="${products.size() gt 0}">
+          <h4><i class="icon-heart-y"></i>Каталог<i class="icon-heart-y"></i></h4>
       <p>Выберите категорию,  что бы просмотреть товары в ней</p>
-      <p>Что-бы изменить товар, нажмите на его имя в выпадающем списке категории, или перейдите по ссылке
-          "редактировать" на странице категории</p>
+      <p>Что-бы изменить товар, нажмите на его имя в выпадающем списке категории</p>
       <div class="navbar">
-        <nav class="navbar-inner-admin">
+        <nav class="navbar-inner">
           <ul class="nav">
               <c:forEach items="${categories}" var="category">
                 <li class="dropdown" position="absolute"><a href="/admin/category/${category.name}"

@@ -48,6 +48,8 @@
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/logout">Выйти</a></li>
         </ul>
@@ -55,11 +57,12 @@
     </div><br><br>
 
     <!-- Container - All feedbacks -->
-
-    <div class="container" align="middle"><br>
+    <br><br>
+    <div class="container" align="middle" style="padding: 5px 10px;"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
+      <h4><i class="icon-heart-y"></i> Все отзывы<i class="icon-heart-y"></i></h4>
       <div class="row">
         <div class="span6">
             <form class="form-search" method="post" action="/admin/feedbacks/byClientId" >
@@ -98,10 +101,10 @@
             <td>${feedback.id}</td>
             <td>${feedback.product.id}</td>
             <td>${feedback.product.name}</td>
-            <td>${feedback.data}</td>
+            <td>${feedback.date}</td>
             <td>${feedback.client.id}</td>
-            <td>${feedback.client.FirstName}</td>
-            <td>${feedback.client.PhoneNumber}</td>
+            <td>${feedback.client.firstName}</td>
+            <td>${feedback.client.phoneNumber}</td>
             <td>${feedback.evaluation}</td>
             <td>${feedback.feedback}</td>
             <td><a href="/admin/feedbacks/edit?id=${feedback.id}" class="btn btn-warning" type="submit">Редактировать</a>

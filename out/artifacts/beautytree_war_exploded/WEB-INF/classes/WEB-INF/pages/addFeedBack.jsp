@@ -47,6 +47,8 @@
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+            <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/logout">Выйти</a></li>
         </ul>
@@ -88,19 +90,19 @@
             <td><strong>Оценка от 1 до 5</strong></td>
             <td>
                 <label class="radio inline">
-                  <input type="radio" name="evaluation" id="optionsRadios1" value="option1">1
+                  <input type="radio" name="evaluation" id="optionsRadios1" value="1">1
                 </label>
                 <label class="radio inline">
-                    <input type="radio" name="evaluation" id="optionsRadios2" value="option2" >2
+                    <input type="radio" name="evaluation" id="optionsRadios2" value="2" >2
                 </label>
                 <label class="radio inline">
-                    <input type="radio" name="evaluation" id="optionsRadios3" value="option3" >3
+                    <input type="radio" name="evaluation" id="optionsRadios3" value="3" >3
                 </label>
                 <label class="radio inline">
-                    <input type="radio" name="evaluation" id="optionsRadios4" value="option4" >4
+                    <input type="radio" name="evaluation" id="optionsRadios4" value="4" >4
                 </label>
                 <label class="radio inline">
-                    <input type="radio" name="evaluation" id="optionsRadios5" value="option5" checked>5
+                    <input type="radio" name="evaluation" id="optionsRadios5" value="5" checked>5
                 </label>
             </td>
           </tr>

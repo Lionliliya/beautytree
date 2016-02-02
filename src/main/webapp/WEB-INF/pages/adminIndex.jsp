@@ -49,6 +49,8 @@
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/logout">Выйти</a></li>
 
@@ -57,8 +59,8 @@
     </div><br><br>
 
 <!-- Container -->
-
-    <div class="container"><br>
+<br><br>
+    <div class="container" align="middle" style="padding: 5px 10px;"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
@@ -68,36 +70,35 @@
       </c:if>
       <c:if test="${orders.size() gt 0}">
       <table class="table table-bordered table-striped">
+        <caption><h4><i class="icon-heart-y"></i> Все заказы<i class="icon-heart-y"></i></h4></caption>
         <thead>
         <tr>
-          <th>Номер заказа</th>
-          <th>Дата</th>
-          <th>Имя клиента</th>
-          <th>Телефон</th>
-          <th>Товары</th>
-          <th>Доставка</th>
-          <th>Адрес доставки</th>
-          <th>Коментарии</th>
-          <th>Сумма, грн</th>
-          <th>Изменить</th>
+          <th style="background-color: rgba(233, 208, 255, 0.7); color: midnightblue;">Номер заказа</th>
+          <th style="background-color: rgba(233, 208, 255, 0.8); color: midnightblue;">Дата</th>
+          <th style="background-color: rgba(233, 208, 255, 0.9); color: midnightblue;">Имя клиента</th>
+          <th style="background-color: rgba(161, 105, 171, 0.4); color: midnightblue;">Телефон</th>
+          <th style="background-color: rgba(161, 105, 171, 0.5); color: midnightblue;">Товары</th>
+          <th style="background-color: rgba(161, 105, 171, 0.6); color: midnightblue;">Доставка</th>
+          <th style="background-color: rgba(161, 105, 171, 0.6); color: midnightblue;">Коментарии</th>
+          <th style="background-color: rgba(161, 105, 171, 0.7); color: midnightblue;">Сумма, грн</th>
+          <th style="background-color: rgba(161, 105, 171, 0.8); color: midnightblue;">Изменить</th>
         </tr>
         </thead>
-        <tbody>
-        <c:forEach items="orders" var="order">
+        <tbody style="color: #000000;">
+        <c:forEach items="${orders}" var="order">
             <tr>
               <td>${order.id}</td>
               <td>${order.date}</td>
-              <td>${order.client.FirstName}</td>
-              <td>${order.client.PhoneNumber}</td>
+              <td>${order.client.firstName}</td>
+              <td>${order.client.phoneNumber}</td>
               <td>
                 <ol>
-                  <c:forEach items="${order.ProductsInCart}" var = "product">
-                    <li><p>${product.id} | ${product.name} | ${product.Category} | ${product.price} грн<p></li>
+                  <c:forEach items="${order.productsInCart}" var = "product">
+                    <li><p>${product.product_id.id} | ${product.name} | ${product.category} | ${product.price} грн<p></li>
                   </c:forEach>
                 </ol>
               </td>
               <td>${order.delivery}</td>
-              <td></td>
               <td>${order.comments}</td>
               <td>${order.totalAmount}</td>
               <td><a href="/admin/orders/edit?id=${order.id}" class="btn btn-warning" type="submit">Редактировать</a>

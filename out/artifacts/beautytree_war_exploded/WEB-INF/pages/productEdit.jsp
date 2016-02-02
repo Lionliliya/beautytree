@@ -48,6 +48,8 @@
       <li><a href="/admin/catalog">Каталог продукции</a></li>
       <li><a href="/admin/clients">Клиенты</a></li>
       <li><a href="/admin/feedbacks">Отзывы</a></li>
+      <li><a href="/admin/articles">Статьи и новости</a></li>
+      <li><a href="/admin/parameters">Настройки</a></li>
       <li><a href="/">Перейти в интернет-магазин</a></li>
       <li><a href="/admin/logout">Выйти</a></li>
     </ul>
@@ -96,10 +98,10 @@
         <td><strong>Наличие(да/нет)</strong></td>
         <td>
           <label class="radio inline">
-            <input type="radio" name="inStock" id="optionsRadios1" value="option1" checked>y
+            <input type="radio" name="inStock" id="optionsRadios1" value="yes" checked>yes
           </label>
           <label class="radio inline">
-            <input type="radio" name="inStock" id="optionsRadios2" value="option2">n
+            <input type="radio" name="inStock" id="optionsRadios2" value="no">no
           </label>
         </td>
 
@@ -116,6 +118,18 @@
         <td><textarea class="span4" rows="5" type="text" name="shortDesc" required>${product.shortDesc}
             </textarea>
         </td>
+      </tr>
+      <tr>
+        <td><strong>Описание для мета-тега description, не больше 160 букв</strong></td>
+        <td><input type="text" name="metaDescription" value="${product.metaDescription}" required></td>
+      </tr>
+      <tr>
+        <td><strong>Ключевый слова для поиска, 2-4 слова через запятую в ед. числе</strong></td>
+        <td><input type="text" name="metaKeyWords" value="${product.metaKeyWords}" required></td>
+      </tr>
+      <tr>
+        <td><strong>Title для мета-тега, не больше 70 букв</strong></td>
+        <td><input type="text" name="metaTitle" value="${product.metaTitle}" required></td>
       </tr>
       <tr>
         <td><strong>Фото предпросмотр</strong></td>

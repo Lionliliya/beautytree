@@ -48,6 +48,9 @@
           <li><a href="/admin/">Главная</a></li>
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
+          <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
           <li><a href="/admin/login">Выйти</a></li>
         </ul>
@@ -81,13 +84,16 @@
               <input type="text" name="amount" placeholder="Количество в упаковке" required><br>
               <span class="help-inline">Укажите есть ли товар в наличии</span><br>
               <label class="radio inline">
-                <input type="radio" name="inStock" id="optionsRadios1" value="option1" checked>y</label>
+                <input type="radio" name="inStock" id="optionsRadios1" value="yes" checked>yes</label>
               <label class="radio inline">
-                <input type="radio" name="inStock" id="optionsRadios2" value="option2">n</label><br>
+                <input type="radio" name="inStock" id="optionsRadios2" value="no">no</label><br>
               <input type="text" name="description" placeholder="Полное описание" required><br>
             </div>
             <div class="span5">
               <input type="text" name="shortDesc" placeholder="Короткое описание" required><br>
+              <input type="text" name="metaDescription" placeholder="Описание для мета-тега description, не больше 160 букв" required><br>
+              <input type="text" name="metaKeyWords" placeholder="Ключевый слова, 2-4 слова через запятую в ед. числе" required><br>
+              <input type="text" name="metaTitle" placeholder="Title для мета-тега, не больше 70 букв" required><br>
               <input type="text" name="smallimage" placeholder="Путь у мини-фото" required><br>
               <input type="text" name="image1" placeholder="Ссылка Фото 1" required><br>
               <input type="text" name="image2" placeholder="Ссылка Фото 2" required><br>

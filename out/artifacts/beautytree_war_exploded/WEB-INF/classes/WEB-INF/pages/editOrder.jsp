@@ -51,6 +51,8 @@
           <li><a href="admin/catalog">Каталог продукции</a></li>
           <li><a href="admin/clients">Клиенты</a></li>
           <li><a href="admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="admin/login">Выйти</a></li>
 
         </ul>
@@ -76,11 +78,11 @@
           </tr>
           <tr>
             <td><strong>Имя клиента</strong></td>
-            <td><input type="text" name="FirstName" value="${order.client.FirstName}" readonly></td>
+            <td><input type="text" name="firstName" value="${order.client.firstName}" readonly></td>
           </tr>
           <tr>
             <td><strong>Телефон</strong></td>
-            <td><input type="text" name="PhoneNumber" value="${order.client.PhoneNumber}" readonly></td>
+            <td><input type="text" name="phoneNumber" value="${order.client.phoneNumber}" readonly></td>
           </tr>
           <tr>
             <td><strong>Доставка</strong></td>
@@ -91,10 +93,10 @@
             <td><input type="text" name="comments" value="${order.comments}"></td>
           </tr>
 
-          <c:forEach items="${order.ProductsInCart}" var = "product">
+          <c:forEach items="${order.productsInCart}" var = "product">
             <tr>
               <td>Товар</td>
-              <td><input type="text" value="${product.id} | ${product.name} | ${product.Category} | ${product.price}
+              <td><input type="text" value="${product.id} | ${product.name} | ${product.category} | ${product.price}
               грн" readonly></td>
             </tr>
           </c:forEach>

@@ -7,13 +7,14 @@
   Time: 18:34
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta lang="ru">
-  <title>BeautyTree || Интернет магазин кистей для макияжа</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Liliya Yalovchenko">
+    <meta lang="ru">
+    <title>Beauty Tree | Корзина ваших покупок</title> // 70 letters
   <link rel="apple-touch-icon" sizes="57x57" href="/resources/bootstrap/img/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/resources/bootstrap/img/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/resources/bootstrap/img/favicons/apple-touch-icon-72x72.png">
@@ -80,11 +81,9 @@
           <li class="dropdown" position="absolute">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Асортимент<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="/catalog/brushsets">Наборы кистей</a></li>
-              <li><a href="/catalog/facebrushes">Кисти для лица</a></li>
-              <li><a href="/catalog/eyebrushes">Кисти для глаз</a></li>
-              <li><a href="/catalog/lipbrushes">Кисти для губ</a></li>
-              <li><a href="/catalog/accessories">Дополнительные аксессуары</a></li>
+                <c:forEach items="${categories}" var="category">
+                    <li><a href="/catalog/${category.id}">${category.name}</a></li>
+                </c:forEach>
             </ul>
           </li>
           <li><a href="/packing">Подарочная упаковка</a></li>
@@ -110,30 +109,30 @@
     <!--If cart is empty-->
       <c:if test = "${cartSize eq 0}">
         <div class="row">
-          <div class="span12"><article class="art-head"><h2>В корзине пока нет товаров...</h2></article></div>
+          <div class="span12"><article class="art-head"><h2><i class="icon-heart-y"></i> В корзине пока нет товаров...<i class="icon-heart-y"></i></h2></article></div>
           <div class="span3 offset4 cart-link"><a href="/catalog" style="text-decoration: none; color: inherit;">Продолжить покупки &raquo;&raquo; </a></div>
         </div>
       </c:if>
     <!--If cart if not empty-->
       <c:if test = "${cartSize gt 0}">
           <table class="table table-bordered table-striped">
-          <caption><h4>Корзина</h4></caption>
+          <caption><h4><i class="icon-heart-y"></i> Корзина<i class="icon-heart-y"></i></h4></caption>
           <thead>
           <tr>
-              <th>Фото</th>
-              <th>Артикул</th>
-              <th>Название товара</th>
-              <th>Категория</th>
-              <th>Цена, грн</th>
+              <th style="background-color: rgba(136, 87, 119, .4);">Фото</th>
+              <th style="background-color: rgba(136, 87, 119, .5);">Артикул</th>
+              <th style="background-color: rgba(136, 87, 119, .6);">Название товара</th>
+              <th style="background-color: rgba(136, 87, 119, .7);">Категория</th>
+              <th style="background-color: rgba(136, 87, 119, .8);">Цена, грн</th>
             </tr>
           </thead>
           <tbody>
           <c:forEach items="${ProductsInCart}" var = "product">
           <tr>
               <td><img src="/resources/${product.smallimage}" width="170" height="106" alt="${product.name}"></td>
-              <td>${product.id}</td>
+              <td>${product.product_id.id}</td>
               <td>${product.name}</td>
-              <td>${product.productCategory}</td>
+              <td>${product.category}</td>
               <td>${product.price}</td>
           </tr>
           </c:forEach>
@@ -148,34 +147,35 @@
           </table>
 
         <div class="row">
-          <div class="span6"><a href="/catalog" class="btn btn-warning" type="button">Продолжить покупки</a></div>
-          <div class="span6"><a href="/cartClearing" class="btn btn-warning" type="button">Очистить корзину</a></div>
+          <div class="span6"><i class="icon-heart-y"></i><a href="/catalog" onclick="history.back()" class="btn btn-warning" type="button">Продолжить покупки</a><i class="icon-heart-y"></i></div>
+          <div class="span6"><i class="icon-heart-y"></i><a href="/cartClearing" class="btn btn-warning" type="button">Очистить корзину</a><i class="icon-heart-y"></i></div>
         </div>
         <br>
         <div class="row">
           <form data-persist="garlic" method="post" action="/ordering">
 
-            <input type="text" name ="FirstName" placeholder="Введите Ваше имя" required pattern="^[А-Яа-яЁё\s]+$" autofocus><br>
+            <input type="text" name ="firstName" placeholder="Введите Ваше имя" required pattern="^[A-Za-zА-Яа-яЁё]+$" autofocus><br>
 
-            <input type="text" id="phone" name="PhoneNumber" placeholder="Введите ваш телефон"><br>
+            <input type="text" id="phone" name="phoneNumber" placeholder="Введите ваш телефон"><br>
 
-            <input type="email" name ="Email" placeholder="Введите Email" required><br>
+            <input type="email" name ="email" placeholder="Введите Email" required><br>
 
             <label class="radio inline">
-              <input type="radio" name="delivery" id="optionsRadios1" value="option1" checked> Самовывоз
+              <input type="radio" name="delivery" id="optionsRadios1" value="selfdelivery" checked> Самовывоз
             </label>
             <label class="radio inline">
-              <input type="radio" name="delivery" id="optionsRadios2" value="option2" >Новая почта
+              <input type="radio" name="delivery" id="optionsRadios2" value="newPost">Новая почта
             </label>
             <label class="radio inline">
-              <input type="radio" name="delivery" id="optionsRadios3" value="option3" >УкрПочта
+              <input type="radio" name="delivery" id="optionsRadios3" value="UkrPost">УкрПочта
             </label>
             <label class="radio inline">
-              <input type="radio" name="delivery" id="optionsRadios4" value="option4" >Курьер
+              <input type="radio" name="delivery" id="optionsRadios4" value="Carier">Курьер
             </label><br><br>
-            <textarea rows="3" name="comments" placeholder="Оставте коментарий, по желанию"></textarea><br>
-
+            <textarea rows="5" class="span4" style="float: none;" name="comments" placeholder="Укажите свой адрес для доставки и оставте коментарий, по желанию"></textarea><br>
+            <i class="icon-heart-y"></i>
             <input type="submit" value = "Оформить заказ" class="btn btn-warning">
+              <i class="icon-heart-y"></i>
           </form>
         </div>
       </c:if>
@@ -220,11 +220,9 @@
                 <div class="span2">
                     <div class="header-list">
                         <ul>
-                            <li><a href="/catalog/brushsets">Наборы кистей</a></li>
-                            <li><a href="/catalog/facebrushes">Кисти для лица</a></li>
-                            <li><a href="/catalog/eyebrushes">Кисти для глаз</a></li>
-                            <li><a href="/catalog/lipbrushes">Кисти для губ</a></li>
-                            <li><a href="/catalog/accessories">Аксессуары</a></li>
+                            <c:forEach items="${categories}" var="category">
+                                <li><a href="/catalog/${category.id}">${category.name}</a></li>
+                            </c:forEach>
                         </ul>
                     </div>
                 </div>

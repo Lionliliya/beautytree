@@ -49,6 +49,8 @@
           <li><a href="/admin/catalog">Каталог продукции</a></li>
           <li><a href="/admin/clients">Клиенты</a></li>
           <li><a href="/admin/feedbacks">Отзывы</a></li>
+          <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="/">Перейти в интернет-магазин</a></li>
           <li><a href="/admin/logout">Выйти</a></li>
 
@@ -57,8 +59,8 @@
     </div><br><br>
 
     <!-- Container - All clients -->
-
-    <div class="container"><br>
+    <br><br>
+    <div class="container" align="middle" style="padding: 5px 10px;"><br>
       <header>
         <div class="logo-text"><h1>BeautyTree</h1></div><br>
       </header>
@@ -66,15 +68,17 @@
         <div class="span12"><article class="art-head"><h2>Пока у вас нет клиентов</h2></article></div>
       </c:if>
       <c:if test="${clients.size() gt 0}">
+
       <table class="table table-bordered table-striped">
+        <caption><h4><i class="icon-heart-y"></i> Клиенты<i class="icon-heart-y"></i></h4></caption>
         <thead>
         <tr>
-          <th>Номер клиента</th>
-          <th>Имя клиента</th>
-          <th>Телефон</th>
-          <th>E-mail</th>
-          <th>Отзывы</th>
-          <th>Изменить</th>
+          <th style="background-color: rgba(161, 105, 171, 0.4); color: midnightblue;">Номер клиента</th>
+          <th style="background-color: rgba(161, 105, 171, 0.5); color: midnightblue;">Имя клиента</th>
+          <th style="background-color: rgba(161, 105, 171, 0.6); color: midnightblue;">Телефон</th>
+          <th style="background-color: rgba(161, 105, 171, 0.7); color: midnightblue;">E-mail</th>
+          <th style="background-color: rgba(161, 105, 171, 0.8); color: midnightblue;">Отзывы</th>
+          <th style="background-color: rgba(161, 105, 171, 0.9); color: midnightblue;">Изменить</th>
         </tr>
         </thead>
         <tbody>
@@ -91,7 +95,7 @@
                 </c:forEach>
               </ol>
             </td>
-            <td><a href="/admin/clients/edit?id=${client.id}" class="btn btn-warning" type="submit">Редактировать</a>
+            <td><a href="/admin/clients/edit?id=${client.id}" class="btn btn-xs btn-success btn-block" type="submit">Редактировать</a>
               <br>
             </td>
           </tr>
