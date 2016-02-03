@@ -62,6 +62,8 @@
 
     <div class="container" align="middle"><br>
       <div class="logo-text"><h1>BeautyTree</h1></div>
+      <h4><i class="icon-heart-y"></i>${category}<i class="icon-heart-y"></i></h4>
+      <a href="/admin/category/edit/${category}" class="btn btn-warning" type="button">Редактировать категорию</a><br><br>
       <table class="table table-bordered table-striped" style="font-size: 12px; font-family: philosopherregular;">
         <thead>
           <tr>

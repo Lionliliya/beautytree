@@ -179,6 +179,25 @@ public class BeautyDAOImplementation implements BeautyDAO {
         }
     }
 
+    public void saveCategory(int id, String name, String info, String metaDescription, String metaKeyWords, String metaTitle) {
+        Query query = entityManager.createQuery("SELECT a FROM Category a  WHERE a.id =:var", Category.class);
+        query.setParameter("var", id);
+        Category resultCategory = (Category) query.getResultList().get(0);
+        try{
+            entityManager.getTransaction().begin();
+            resultCategory.setName(name);
+            resultCategory.setInfo(info);
+            resultCategory.setMetaDescription(metaDescription);
+            resultCategory.setMetaKeyWords(metaKeyWords);
+            resultCategory.setMetaTitle(metaTitle);
+            entityManager.getTransaction().commit();
+        }
+        catch(Exception e){
+            entityManager.getTransaction().rollback();
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void saveOrder(Order order) {
         try {

@@ -52,6 +52,8 @@ public interface BeautyDAO {
 
     public void saveCategory(Category category);
 
+    public void saveCategory(int id, String name, String info, String metaDescription, String metaKeyWords, String metaTitle);
+
     public void saveOrder(Order order);
 
     public void saveFeedBack(FeedBack feedBack);

@@ -52,6 +52,7 @@
           <li><a href="admin/clients">Клиенты</a></li>
           <li><a href="admin/feedbacks">Отзывы</a></li>
           <li><a href="/admin/articles">Статьи и новости</a></li>
+          <li><a href="/admin/parameters">Настройки</a></li>
           <li><a href="admin/login">Выйти</a></li>
 
         </ul>

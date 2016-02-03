@@ -71,7 +71,7 @@
       </tr>
       <tr>
         <td><strong>Имя, не больше 25 символов</strong></td>
-        <td><input type="text" name="name" value="${product.name}" required></td>
+        <td><input type="text" name="name" maxlength="25" value="${product.name}" required></td>
       </tr>
       <tr>
         <td><strong>Цена</strong></td>

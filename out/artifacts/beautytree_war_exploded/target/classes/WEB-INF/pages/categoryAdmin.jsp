@@ -62,19 +62,21 @@
 
     <div class="container" align="middle"><br>
       <div class="logo-text"><h1>BeautyTree</h1></div>
+      <h4><i class="icon-heart-y"></i>${category}<i class="icon-heart-y"></i></h4>
+      <a href="/admin/category/edit/${category}" class="btn btn-warning" type="button">Редактировать категорию</a><br><br>
       <table class="table table-bordered table-striped" style="font-size: 12px; font-family: philosopherregular;">
         <thead>
           <tr>
-            <th style="font-size: 12px;">Артикул</th>
-            <th style="font-size: 12px;">Фото</th>
-            <th style="font-size: 12px;">Имя товара</th>
-            <th style="font-size: 12px;">Цена</th>
-            <th style="font-size: 12px;">Валюта</th>
+            <th>">Артикул</th>
+            <th>Фото</th>
+            <th>Имя товара</th>
+            <th>Цена</th>
+            <th>Валюта</th>
 
-            <th style="font-size: 12px;">Кол-во в уп.</th>
-            <th style="font-size: 12px;">Наличие</th>
+            <th>Кол-во в уп.</th>
+            <th>Наличие</th>
 
-            <th style="font-size: 12px;">Изменить</th>
+            <th>Изменить</th>
           </tr>
         </thead>
         <tbody>

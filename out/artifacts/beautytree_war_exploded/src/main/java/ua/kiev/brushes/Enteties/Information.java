@@ -18,7 +18,7 @@ public class Information implements Serializable {
     private int id;
     @Column(nullable = false)
     private String title;
-    @Column()
+
     private String imagePath;
     @Column(nullable = false)
     private String shortDescription;
@@ -28,7 +28,6 @@ public class Information implements Serializable {
     private String buttonText;
     @Column(nullable = false)
     private String content;
-
     private String metaTitle;
     @Column(name="KeyWord")
     private String metaKeyWords;

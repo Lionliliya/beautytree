@@ -14,7 +14,6 @@ public class Category implements Serializable {
     @Id
     @GeneratedValue
     private int id;
-
     @Column(name="Cname", nullable = false)
     private String name;
     private String info;

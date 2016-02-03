@@ -304,12 +304,50 @@ public class AdminController {
 
         if (checkStatus(session)) {
             modelAndView.setViewName("categoryAdmin");
+            modelAndView.addObject("category", beautyDAO.getCategoryByName(name).getName());
             modelAndView.addObject("products", beautyDAO.getProductsByCategory(name));
         } else {
             modelAndView.setViewName("adminLogin");
         }
         return modelAndView;
     }
+
+    @RequestMapping(value = "/category/edit/{name}")
+    public ModelAndView categoryEdit(@PathVariable("name") String name,
+                                     HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            modelAndView.setViewName("categoryEdit");
+            modelAndView.addObject("category", beautyDAO.getCategoryByName(name));
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/category/save")
+    public ModelAndView categorySave(@RequestParam(value="id") int id,
+                                     @RequestParam(value="name") String name,
+                                     @RequestParam(value="info") String info,
+                                     @RequestParam(value="metaDescription") String metaDescription,
+                                     @RequestParam(value="metaKeyWords") String metaKeyWords,
+                                     @RequestParam(value="metaTitle") String metaTitle,
+                                     HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        ModelAndView modelAndView = new ModelAndView();
+        if (checkStatus(session)) {
+            beautyDAO.saveCategory(id, name, info, metaDescription, metaKeyWords, metaTitle);
+            modelAndView.setViewName("adminCatalog");
+            modelAndView.addObject("products", beautyDAO.getAllProducts());
+            modelAndView.addObject("categories", beautyDAO.getAllCategories());
+        } else {
+            modelAndView.setViewName("adminLogin");
+        }
+        return modelAndView;
+    }
+
+
 
     @RequestMapping(value = "/product/edit",  method = RequestMethod.GET)
     public ModelAndView productEdit(@RequestParam(value="id") int id,

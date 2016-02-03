@@ -83,7 +83,7 @@
   </header>
   <h4><i class="icon-heart-p"></i>Редактирование пользователя<i class="icon-heart-p"></i></h4>
   <div class="span10" style="float: none; margin-left: 20px; margin-bottom: 30px;">
-    <form class="span10" style="float: none; margin-bottom: 60px;" method="post" action="/admin/parametersr">
+    <form class="span10" style="float: none; margin-bottom: 60px;" method="post" action="/admin/parameters">
       <div class="row"><input type=hidden class="span10" type="text" name="id" value="${admin.id}" readonly required></div>
       <div class="row"><p class="label-form">Статус<i class="icon-heart-y"></i></p></div>
       <div class="row"><input class="span10" type="text" name="role" value="${admin.role}" required></div>

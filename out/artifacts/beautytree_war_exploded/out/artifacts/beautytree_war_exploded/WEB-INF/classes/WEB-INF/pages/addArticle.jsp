@@ -49,6 +49,7 @@
       <li><a href="/admin/clients">Клиенты</a></li>
       <li><a href="/admin/feedbacks">Отзывы</a></li>
       <li><a href="/admin/articles">Статьи и новости</a></li>
+      <li><a href="/admin/parameters">Настройки</a></li>
       <li><a href="/">Перейти в интернет-магазин</a></li>
       <li><a href="/admin/logout">Выйти</a></li>
     </ul>
@@ -85,11 +86,11 @@
       <textarea class="span10" rows="15" type="text" name="content" required></textarea>
     </div>
     <div class="row"><p class="label-form">Описание для мета-тега description, не больше 160 букв<i class="icon-heart-y"></i></p></div>
-    <div class="row"><input class="span10" type="text" name="metaDescription" value="" required></div>
+    <div class="row"><input class="span10" type="text" maxlength="160" name="metaDescription" value="" required></div>
     <div class="row"><p class="label-form">Ключевый слова для поиска, 2-4 слова через запятую в ед. числе<i class="icon-heart-y"></i></p></div>
-    <div class="row"><input class="span10" type="text" name="metaKeyWords" value="" required></div>
+    <div class="row"><input class="span10" type="text" maxlength="120" name="metaKeyWords" value="" required></div>
     <div class="row"><p class="label-form">Title для мета-тега, не больше 70 букв<i class="icon-heart-y"></i></p></div>
-    <div class="row"><input class="span10" type="text" name="metaTitle" value="" required></div>
+    <div class="row"><input class="span10" type="text" maxlength="70" name="metaTitle" value="" required></div>
 
     <br>
     <div class="span3"><input class="btn btn-xs btn-success btn-block" type="submit" value = "Сохранить"></div>
