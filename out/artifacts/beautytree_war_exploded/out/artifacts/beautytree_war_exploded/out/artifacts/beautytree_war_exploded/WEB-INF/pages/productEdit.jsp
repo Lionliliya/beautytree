@@ -49,6 +49,7 @@
       <li><a href="/admin/clients">Клиенты</a></li>
       <li><a href="/admin/feedbacks">Отзывы</a></li>
       <li><a href="/admin/articles">Статьи и новости</a></li>
+      <li><a href="/admin/parameters">Настройки</a></li>
       <li><a href="/">Перейти в интернет-магазин</a></li>
       <li><a href="/admin/logout">Выйти</a></li>
     </ul>
@@ -69,7 +70,7 @@
         <td><input type="text" name="id" value="${product.id}" readonly></td>
       </tr>
       <tr>
-        <td><strong>Имя</strong></td>
+        <td><strong>Имя, не больше 25 символов</strong></td>
         <td><input type="text" name="name" value="${product.name}" required></td>
       </tr>
       <tr>
@@ -133,6 +134,10 @@
       <tr>
         <td><strong>Фото предпросмотр</strong></td>
         <td><input type="text" name="smallimage" value="${product.smallimage}" required></td>
+      </tr>
+      <tr>
+        <td><strong>Фото предпросмотр 2</strong></td>
+        <td><input type="text" name="smallimage1" value="${product.smallimage1}" required></td>
       </tr>
       <tr>
         <td><strong>Фото 1</strong></td>

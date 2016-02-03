@@ -50,6 +50,16 @@
                 return false;
             });
         }); </script>
+    <c:forEach items="${products}" var="product">
+        <script type="text/javascript">
+            function MouseRollover(MyImage) {
+                MyImage.src = "/resources/${product.image1}";
+            }
+            function MouseOut(MyImage) {
+                MyImage.src = "/resources/${product.smallimage}";
+            }
+        </script>
+    </c:forEach>
 </head>
 <body>
 
@@ -98,27 +108,16 @@
                 <c:forEach items="${products}" var="product">
                     <li class="span4">
                         <div class="thumbnail">
-                            <form action="/cart" method=post style="margin-left: 0px;">
-                                <input type=hidden name="id" value="${product.id}">
-                                <input type=hidden name="productCategory" value="${product.productCategory.name}">
-                                <input type=hidden name="smallimage" value="${product.smallimage}">
-                                <input type=hidden name="name" value="${product.name}">
-                                <input type=hidden name="price" value="${product.price}">
-                                <input type=hidden name="currency" value="${product.currency}">
 
-                            <a href="/product/${product.id}" style="text-decoration: none"><img
-                                    src="/resources/${product.smallimage}" width="200" height="200"
-                                    alt="${product.name}"></a>
+                            <!--The rollover image displays here.-->
 
+                            <a href="/product/${product.id}" style="text-decoration: none"><img src="/resources/${product.smallimage}"
+                            width="200" height="200" onMouseOver="this.src='/resources/${product.smallimage1}'" onMouseOut="this.src='/resources/${product.smallimage}'"
+                            alt="${product.name}"></a>
                             <div class="caption">
-                                <h4><b class="lead"> ${product.name} </b></h4>
-                                <h5>Цена: ${product.price} ${product.currency}</h5>
-                                <!--<p>${product.shortDesc}</p>-->
-                                <p><button type="submit" class="btn">Купить</button></p><br>
-
-                                <p><a href="/product" class="btn">Просмотреть</a></p>
+                            <h4><b class="lead"> ${product.name} </b></h4>
+                            <h5><i class="icon-heart-y"></i>Цена: ${product.price} ${product.currency}<i class="icon-heart-y"></i></h5>
                             </div>
-                        </form>
                         </div>
                     </li>
                 </c:forEach>

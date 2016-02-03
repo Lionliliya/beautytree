@@ -2063,7 +2063,7 @@ select:focus:invalid:focus {
 
 
 .form-actions-new-product {
-  height: 500px;
+  height: 700px;
   padding: 5px 5px 5px;
   
   background-color: #d4ce6c;
@@ -6739,6 +6739,29 @@ a.badge:focus {
     background-color: rgba(136, 87, 119, .7);
 }
 
+li .catalog-item {
+    width: 22%;
+    margin-right: 2%;
+    float: left;
+    padding-bottom: 40px;
+    height: 202px;
+}
+
+.catalog-item li a .hover {
+    width: 100%;
+    padding-top: 55px;
+    text-align: center;
+    border-radius: 100%;
+    background: #f3d549;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+    font-family: 'philosopherregular';
+}
 
 
 	

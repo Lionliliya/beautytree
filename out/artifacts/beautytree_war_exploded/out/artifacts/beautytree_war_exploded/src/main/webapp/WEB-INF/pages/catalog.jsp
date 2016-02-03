@@ -50,6 +50,16 @@
                 return false;
             });
         }); </script>
+    <c:forEach items="${products}" var="product">
+        <script type="text/javascript">
+            function MouseRollover(MyImage) {
+                MyImage.src = "/resources/${product.image1}";
+            }
+            function MouseOut(MyImage) {
+                MyImage.src = "/resources/${product.smallimage}";
+            }
+        </script>
+    </c:forEach>
 </head>
 <body>
 
@@ -98,17 +108,15 @@
                 <c:forEach items="${products}" var="product">
                     <li class="span4">
                         <div class="thumbnail">
-                            <a href="/product/${product.id}" style="text-decoration: none"><img
-                                    src="/resources/${product.smallimage}" width="200" height="200"
-                                    alt="${product.name}"></a>
 
+                            <!--The rollover image displays here.-->
+
+                            <a href="/product/${product.id}" style="text-decoration: none"><img src="/resources/${product.smallimage}"
+                            width="200" height="200" onMouseOver="this.src='/resources/${product.smallimage1}'" onMouseOut="this.src='/resources/${product.smallimage}'"
+                            alt="${product.name}"></a>
                             <div class="caption">
-                                <h4><b class="lead"> ${product.name} </b></h4>
-                                <h5>Цена: ${product.price} ${product.currency}</h5>
-                                <!--<p>${product.shortDesc}</p>-->
-                                <p><a href="/cart" class="btn">Добавить в корзину</a></p><br>
-
-                                <p><a href="/product" class="btn">Просмотреть</a></p>
+                            <h4><b class="lead"> ${product.name} </b></h4>
+                            <h5><i class="icon-heart-y"></i>Цена: ${product.price} ${product.currency}<i class="icon-heart-y"></i></h5>
                             </div>
                         </div>
                     </li>

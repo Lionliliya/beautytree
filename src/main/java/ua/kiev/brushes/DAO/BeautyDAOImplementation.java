@@ -1,11 +1,10 @@
 package ua.kiev.brushes.DAO;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ua.kiev.brushes.DAO.BeautyDAO;
 import ua.kiev.brushes.Enteties.*;
 
-import javax.persistence.Query;
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -353,7 +352,8 @@ public class BeautyDAOImplementation implements BeautyDAO {
     }
     @Override
     public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
-                            String inStock, String description, String shortDesc, String metaDescription, String metaKeyWords, String metaTitle, String smallimage, String image1,
+                            String inStock, String description, String shortDesc, String metaDescription, String metaKeyWords,
+                            String metaTitle, String smallimage, String smallimage1, String image1,
                             String image2, String image3, String image4) {
         Query query = entityManager.createQuery("SELECT a FROM Product a  WHERE a.id =:var", Product.class);
         query.setParameter("var", id);
@@ -372,6 +372,7 @@ public class BeautyDAOImplementation implements BeautyDAO {
             resultProduct.setMetaKeyWords(metaKeyWords);
             resultProduct.setMetaTitle(metaTitle);
             resultProduct.setSmallimage(smallimage);
+            resultProduct.setSmallimage1(smallimage1);
             resultProduct.setImage1(image1);
             resultProduct.setImage2(image2);
             resultProduct.setImage3(image3);

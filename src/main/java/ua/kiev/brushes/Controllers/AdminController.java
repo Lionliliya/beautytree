@@ -340,6 +340,7 @@ public class AdminController {
                                      @RequestParam(value="metaKeyWords") String metaKeyWords,
                                      @RequestParam(value="metaTitle") String metaTitle,
                                      @RequestParam(value="smallimage") String smallimage,
+                                     @RequestParam(value="smallimage1") String smallimage1,
                                      @RequestParam(value="image1") String image1,
                                      @RequestParam(value="image2") String image2,
                                      @RequestParam(value="image3") String image3,
@@ -350,7 +351,7 @@ public class AdminController {
         if (checkStatus(session)) {
             Category category = beautyDAO.getCategoryByName(productcategory);
             beautyDAO.saveProduct(id, name, price, currency, category, amount, inStock, description, shortDesc, metaDescription, metaKeyWords, metaTitle,
-                    smallimage, image1, image2, image3, image4);
+                    smallimage, smallimage1, image1, image2, image3, image4);
             modelAndView.setViewName("adminCatalog");
             modelAndView.addObject("categories", beautyDAO.getAllCategories());
         } else {
@@ -384,6 +385,7 @@ public class AdminController {
                                    @RequestParam(value="metaKeyWords") String metaKeyWords,
                                    @RequestParam(value="metaTitle") String metaTitle,
                                    @RequestParam(value="smallimage") String smallimage,
+                                   @RequestParam(value="smallimage1") String smallimage1,
                                    @RequestParam(value="image1") String image1,
                                    @RequestParam(value="image2") String image2,
                                    @RequestParam(value="image3") String image3,
@@ -394,7 +396,7 @@ public class AdminController {
         if (checkStatus(session)) {
             Category productCategory = beautyDAO.getCategoryByName(productcategory);
             Product product = new Product(name, price, currency, productCategory, amount, inStock, description,  shortDesc, metaDescription, metaKeyWords, metaTitle,
-                    smallimage, image1, image2, image3, image4);
+                    smallimage, smallimage1, image1, image2, image3, image4);
             beautyDAO.saveProduct(product);
             modelAndView.setViewName("addPage");
             modelAndView.addObject("categories", beautyDAO.getAllCategories());

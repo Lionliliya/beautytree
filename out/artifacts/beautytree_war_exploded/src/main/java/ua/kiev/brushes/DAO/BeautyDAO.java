@@ -36,7 +36,8 @@ public interface BeautyDAO {
     public void saveProduct(Product product);
 
     public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
-                            String inStock, String description, String shortDesc, String metaDescription, String metaKeyWords, String metaTitle, String smallimage, String image1,
+                            String inStock, String description, String shortDesc, String metaDescription,
+                            String metaKeyWords, String metaTitle, String smallimage, String smallimage1, String image1,
                             String image2, String image3, String image4);
 
     public List<Product> search(String pattern);

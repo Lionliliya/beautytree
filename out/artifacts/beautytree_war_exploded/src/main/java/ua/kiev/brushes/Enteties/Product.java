@@ -32,6 +32,7 @@ public class Product implements Serializable {
     private String description;
     private String shortDesc;
     private String smallimage;
+    private String smallimage1;
     private String image1;
     private String image2;
     private String image3;
@@ -51,7 +52,7 @@ public class Product implements Serializable {
 
         public Product (String name, int price, String currency, Category productCategory, int amount, String inStock,
         String description, String shortDesc, String metaDescription, String metaKeyWords, String metaTitle, String
-                smallimage, String image1, String image2, String image3,
+                smallimage, String smallimage1, String image1, String image2, String image3,
         String image4) {
         this.name = name;
         this.price = price;
@@ -65,6 +66,7 @@ public class Product implements Serializable {
         this.metaKeyWords = metaKeyWords;
         this.metaTitle = metaTitle;
         this.smallimage = smallimage;
+        this.smallimage1 = smallimage1;
         this.image1 = image1;
         this.image2 = image2;
         this.image3 = image3;
@@ -166,6 +168,14 @@ public class Product implements Serializable {
 
     public void setSmallimage(String smallimage) {
         this.smallimage = smallimage;
+    }
+
+    public String getSmallimage1() {
+        return smallimage1;
+    }
+
+    public void setSmallimage1(String smallimage1) {
+        this.smallimage1 = smallimage1;
     }
 
     public String getImage1() {

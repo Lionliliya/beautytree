@@ -65,6 +65,18 @@
       <div class="logo-text"><h1>BeautyTree</h1></div>
       <c:if test="${products.size() eq 0}"><div class="span12"><article class="art-head"><h2>У вас нет товаров</h2></article></div></c:if>
       <c:if test="${products.size() gt 0}">
+          <h4><i class="icon-heart-y"></i>Каталог<i class="icon-heart-y"></i></h4>
+          <div class="row">
+              <div class="span12" style="float: none;">
+                  <ul style="list-style: none; margin-top: 10px; margin-bottom: 20px; font-family: philosopher;">
+                      <c:forEach items="${categories}" var="category">
+                          <li style="list-style: none; display: inline; padding: 1%; background-color: #B6A1C4;"><a
+                                  style="text-decoration: none; color: #000000;" href="/admin/category/${category.name}">${category.name}</a></li>
+                      </c:forEach>
+                  </ul>
+              </div>
+          </div>
+
       <p>Выберите категорию,  что бы просмотреть товары в ней</p>
       <p>Что-бы изменить товар, нажмите на его имя в выпадающем списке категории</p>
       <div class="navbar">

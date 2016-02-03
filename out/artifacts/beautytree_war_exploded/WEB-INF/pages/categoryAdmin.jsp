@@ -62,35 +62,32 @@
 
     <div class="container" align="middle"><br>
       <div class="logo-text"><h1>BeautyTree</h1></div>
-      <table class="table table-bordered table-striped" style="font-size: 12px;">
+      <table class="table table-bordered table-striped" style="font-size: 12px; font-family: philosopherregular;">
         <thead>
           <tr>
-            <th style="font-size: 12px;">Артикул</th>
-            <th style="font-size: 12px;">Фото</th>
-            <th style="font-size: 12px;">Имя товара</th>
-            <th style="font-size: 12px;">Цена</th>
-            <th style="font-size: 12px;">Валюта</th>
-            <th style="font-size: 12px;">Категория</th>
-            <th style="font-size: 12px;">Кол-во в уп.</th>
-            <th style="font-size: 12px;">Наличие</th>
-            <th style="font-size: 12px;">Описание</th>
-            <th style="font-size: 12px;">Короткое описание</th>
-            <th style="font-size: 12px;">Изменить</th>
+            <th>">Артикул</th>
+            <th>Фото</th>
+            <th>Имя товара</th>
+            <th>Цена</th>
+            <th>Валюта</th>
+
+            <th>Кол-во в уп.</th>
+            <th>Наличие</th>
+
+            <th>Изменить</th>
           </tr>
         </thead>
         <tbody>
-            <c:forEach items="products" var="product">
+            <c:forEach items="${products}" var="product">
               <tr>
-                <td>${product.id}</td>
+                <td style="font-size: 16px;">${product.id}</td>
                 <td><img src="/resources/${product.smallimage}" alt="${product.name}" width="170" height="106"></td>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td>${product.currency}</td>
-                <td>${product.productCategory}</td>
-                <td>${product.amount}</td>
-                <td>${product.inStock}</td>
-                <td>${product.description}</td>
-                <td>${product.shortDesc}</td>
+                <td style="font-size: 16px;">${product.name}</td>
+                <td style="font-size: 16px;">${product.price}</td>
+                <td style="font-size: 16px;">${product.currency}</td>
+                <td style="font-size: 16px;">${product.amount}</td>
+                <td style="font-size: 16px;">${product.inStock}</td>
+
                 <td><a href="/admin/product/edit?id=${product.id}" class="btn btn-warning" type="submit">Редактировать</a>
                   <br>
                 </td>

@@ -72,6 +72,7 @@
           <h4>Новый товар.</h4>
           <div class="row">
             <div class="span5">
+              <span class="help-inline">Название товара должно быть не больше 25 символов</span><br>
               <input type="text" name="name" placeholder="Имя товара" required><br>
               <input type="text" name="price" placeholder="Цена" required><br>
               <input type="text" name="currency" placeholder="Валюта" required><br>
@@ -88,13 +89,14 @@
               <label class="radio inline">
                 <input type="radio" name="inStock" id="optionsRadios2" value="no">no</label><br>
               <input type="text" name="description" placeholder="Полное описание" required><br>
-            </div>
-            <div class="span5">
               <input type="text" name="shortDesc" placeholder="Короткое описание" required><br>
               <input type="text" name="metaDescription" placeholder="Описание для мета-тега description, не больше 160 букв" required><br>
+            </div>
+            <div class="span5">
               <input type="text" name="metaKeyWords" placeholder="Ключевый слова, 2-4 слова через запятую в ед. числе" required><br>
               <input type="text" name="metaTitle" placeholder="Title для мета-тега, не больше 70 букв" required><br>
               <input type="text" name="smallimage" placeholder="Путь у мини-фото" required><br>
+              <input type="text" name="smallimage1" placeholder="Путь у мини-фото 2" required><br>
               <input type="text" name="image1" placeholder="Ссылка Фото 1" required><br>
               <input type="text" name="image2" placeholder="Ссылка Фото 2" required><br>
               <input type="text" name="image3" placeholder="Ссылка Фото 3" required><br>
@@ -106,10 +108,13 @@
         </form>
           </div>
           <div class="tab-pane" id="tab2">
-            <form role="form" class="form-actions" action="/admin/catalog/addCategory" method="post">
+            <form role="form" class="form-actions-new-product" action="/admin/catalog/addCategory" method="post">
               <h4>Новая категория</h4>
               <input class="input-xlarge" type="text" name="name" placeholder="Имя категории"><br>
               <input class="input-xlarge" type="text" name="info" placeholder="Описание"><br>
+              <input type="text" name="metaDescription" placeholder="Описание для мета-тега description, не больше 160 букв" required><br>
+              <input type="text" name="metaKeyWords" placeholder="Ключевый слова, 2-4 слова через запятую в ед. числе" required><br>
+              <input type="text" name="metaTitle" placeholder="Title для мета-тега, не больше 70 букв" required><br>
               <button type="submit" class="btn btn-warning">Сохранить изменения</button><br><br>
               <a href="admin/catalog/addPage" class="btn btn-warning" type="button">Отмена</a><br>
 
