@@ -1,110 +1,106 @@
 package ua.kiev.brushes.DAO;
 
-import ua.kiev.brushes.Enteties.*;
+import ua.kiev.brushes.Domains.*;
 
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by lionliliya on 09.10.15.
- */
 public interface BeautyDAO {
 
-    public String getAdminPassword(String role);
+    String getAdminPassword(String role);
 
-    public String getAdminUsername(String role);
+    String getAdminUsername(String role);
 
-    public Administrator getAdminByRole(String role);
+    Administrator getAdminByRole(String role);
 
-    public Administrator getAdminById(int id);
+    Administrator getAdminById(int id);
 
-    public List<Administrator> getAllAdmins();
+    List<Administrator> getAllAdmins();
 
-    public void saveAdmin(Administrator administrator);
+    void saveAdmin(Administrator administrator);
 
-    public void saveAdmin(int id, String role, String password, String username, String domainName, String emailAddress,
+    void saveAdmin(int id, String role, String password, String username, String domainName, String emailAddress,
                           String phoneNumber1, String phoneNumber2);
 
-    public List<Product> getAllProducts();
+    List<Product> getAllProducts();
 
-    public List<Product> getProductsByCategory(String CategoryName);
+    List<Product> getProductsByCategory(String CategoryName);
 
-    public Product getProductById(int id);
+    Product getProductById(int id);
 
-    public List<Product> getProductsByCategoryId(int id);
+    List<Product> getProductsByCategoryId(int id);
 
-    public void saveProduct(Product product);
+    void saveProduct(Product product);
 
-    public void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
+    void saveProduct(int id, String name, int price, String currency, Category productCategory, int amount,
                             String inStock, String description, String shortDesc, String metaDescription,
                             String metaKeyWords, String metaTitle, String smallimage, String smallimage1, String image1,
                             String image2, String image3, String image4);
 
-    public List<Product> search(String pattern);
+    List<Product> search(String pattern);
 
-    public Category getCategoryByName(String  category);
+    Category getCategoryByName(String  category);
 
-    public Category getCategoryById(int id);
+    Category getCategoryById(int id);
 
+    List<Category> getAllCategories();
 
-    public List<Category> getAllCategories();
+    void saveCategory(Category category);
 
+    void saveCategory(int id, String name, String info, String metaDescription, String metaKeyWords, String metaTitle);
 
-    public void saveCategory(Category category);
+    void saveOrder(Order order);
 
-    public void saveCategory(int id, String name, String info, String metaDescription, String metaKeyWords, String metaTitle);
+    void saveFeedBack(FeedBack feedBack);
 
-    public void saveOrder(Order order);
+    List<FeedBack> getAllFeedBacks();
 
-    public void saveFeedBack(FeedBack feedBack);
+    List<FeedBack> getFeedBacksByClientId(int ClientId);
 
-    public List<FeedBack> getAllFeedBacks();
+    List<FeedBack> getFeedBacksByProductId(int ProductId);
 
-    public List<FeedBack> getFeedBacksByClientId(int ClientId);
+    FeedBack getFeedBackById(int id);
 
-    public List<FeedBack> getFeedBacksByProductId(int ProductId);
+    void saveFeedBack(FeedBack feedBack, int id);
 
-    public FeedBack getFeedBackById(int id);
+    List<Order> getOrders();
 
-    public void saveFeedBack(FeedBack feedBack, int id);
+    List<Client> getClients();
 
-    public List<Order> getOrders();
+    List<ProductInCart> getProductsInCart();
 
-    public List<Client> getClients();
+    void saveProductInCart(List<ProductInCart> ProductsCart);
 
-    public List<ProductInCart> getProductsInCart();
+    Client getClient(int id);
 
-    public void saveProductInCart(List<ProductInCart> ProductsCart);
+    Client findClientByNameAndEmail (String FirstName, String Email);
 
-    public Client getClient(int id);
+    void saveClient(Client client, int id);
 
-    public Client findClientByNameAndEmail (String FirstName, String Email);
+    void addClient(Client client);
 
-    public void saveClient(Client client, int id);
+    Order getOrder(int id);
 
-    public void addClient(Client client);
+    void saveOrder(int id, String delivery, String comments);
 
-    public Order getOrder(int id);
+    void deleteOrder(int id);
 
-    public void saveOrder(int id, String delivery, String comments);
+    List<Information> getAllArticles();
 
-    public void deleteOrder(int id);
+    Information getAllArticles(int id);
 
-    public List<Information> getAllArticles();
+    Information getAllArticleByName(String title);
 
-    public Information getAllArticles(int id);
+    List<Information> getAllArticlesOrdered();
 
-    public Information getAllArticleByName(String title);
+    List<Information> getAllArticlesDesc();
 
-    public List<Information> getAllArticlesOrdered();
+    void addArticle(Information article);
 
-    public List<Information> getAllArticlesDesc();
+    void deleteArticle(int id);
 
-    public void addArticle(Information article);
-
-    public void deleteArticle(int id);
-
-    public void changeArticle(int id, String title, String imagePath, String shortDescription, Date dateOfPublication,
+    void changeArticle(int id, String title, String imagePath, String shortDescription, Date dateOfPublication,
                               String buttonText, String content, String metaDescription, String metaKeyWords, String metaTitle);
 
+    void addFeedbackToProduct(FeedBack feedBack, int productId);
 }

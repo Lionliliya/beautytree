@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/WebInitializer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Administrator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Category.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Client.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/FeedBack.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Information.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Order.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Product.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/ProductInCart.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

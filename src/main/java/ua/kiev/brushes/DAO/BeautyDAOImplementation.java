@@ -1,7 +1,7 @@
 package ua.kiev.brushes.DAO;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ua.kiev.brushes.Enteties.*;
+import ua.kiev.brushes.Domains.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -509,4 +509,16 @@ public class BeautyDAOImplementation implements BeautyDAO {
 
     }
 
+    @Override
+    public void addFeedbackToProduct(FeedBack feedBack, int productId) {
+        Query query = entityManager.createQuery("SELECT p FROM Product p  WHERE p.id =:id", Product.class);
+        query.setParameter("id", productId);
+        Product product = (Product) query.getResultList().get(0);
+        try {
+            product.addFeedBack(feedBack);
+        } catch (Exception ex) {
+            entityManager.getTransaction().rollback();
+            ex.printStackTrace();
+        }
+    }
 }

@@ -16,29 +16,29 @@
     <meta name="author" content="Liliya Yalovchenko">
     <meta lang="ru">
     <title>BeautyTree | ${product.metaTitle} </title> <!--70 letters-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/resources/bootstrap/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/resources/bootstrap/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/resources/bootstrap/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/resources/bootstrap/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/resources/bootstrap/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/resources/bootstrap/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/resources/bootstrap/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/resources/bootstrap/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/bootstrap/img/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/resources/bootstrap/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/resources/bootstrap/img/favicons/android-chrome-192x192.png"
+    <link rel="apple-touch-icon" sizes="57x57" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-57x57.png"/>">
+    <link rel="apple-touch-icon" sizes="60x60" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-60x60.png"/>">
+    <link rel="apple-touch-icon" sizes="72x72" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-72x72.png"/>">
+    <link rel="apple-touch-icon" sizes="76x76" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-76x76.png"/>">
+    <link rel="apple-touch-icon" sizes="114x114" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-114x114.png"/>">
+    <link rel="apple-touch-icon" sizes="120x120" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-120x120.png"/>">
+    <link rel="apple-touch-icon" sizes="144x144" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-144x144.png"/>">
+    <link rel="apple-touch-icon" sizes="152x152" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-152x152.png"/>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<c:url value="/resources/bootstrap/img/favicons/apple-touch-icon-180x180.png"/>">
+    <link rel="icon" type="image/png" href="<c:url value="/resources/bootstrap/img/favicons/favicon-32x32.png"/>" sizes="32x32">
+    <link rel="icon" type="image/png" href="<c:url value="/resources/bootstrap/img/favicons/android-chrome-192x192.png"/>"
           sizes="192x192">
-    <link rel="icon" type="image/png" href="/resources/bootstrap/img/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/resources/bootstrap/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/resources/bootstrap/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/resources/bootstrap/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/png" href="<c:url value="/resources/bootstrap/img/favicons/favicon-96x96.png"/>" sizes="96x96">
+    <link rel="icon" type="image/png" href="<c:url value="/resources/bootstrap/img/favicons/favicon-16x16.png"/>" sizes="16x16">
+    <link rel="manifest" href="<c:url value="/resources/bootstrap/img/favicons/manifest.json"/>">
+    <link rel="mask-icon" href="<c:url value="/resources/bootstrap/img/favicons/safari-pinned-tab.svg"/>" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#7f5e95">
     <meta name="msapplication-TileImage" content="/resources/bootstrap/img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#7f5e95">
     <meta content="text/html; charset=utf-8"/>
-    <link href="/resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/resources/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap-responsive.css"/>" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -162,7 +162,7 @@
 <div id="wrap">
     <div class="container" align="middle">
         <header>
-            <img src="/resources/bootstrap/img/logo.png" width="199" height="170"
+            <img src="<c:url value="/resources/bootstrap/img/logo.png"/>" width="199" height="170"
                  alt="Купить кисти для макияжа недорого киев"/>
 
             <div class="logo-text"><h1>BeautyTree</h1></div>
@@ -206,7 +206,7 @@
                                  style="float: none; margin-right: auto; margin-left: auto;">
                                 <p>Артикул: 1141${product.id}</p>
 
-                                <p><strong>Оценка ${product.mark} из 5 <i class="icon-heart-p"></i></strong></p>
+                                <p><strong>Оценка ${product.clientsMark} из 5 <i class="icon-heart-p"></i></strong></p>
 
                                 <p>Категория: ${product.productCategory.name}</p>
 
@@ -341,7 +341,7 @@
                      data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print,yazakladki,
                              livejournal,linkedin,googlebookmark" style="margin-top: 5px;"></div>
                 <br>
-                <img src="/resources/bootstrap/img/footer-logo.png" width="100px" style="vertical-align: middle;">
+                <img src="<c:url value="/resources/bootstrap/img/footer-logo.png"/>" width="100px" style="vertical-align: middle;">
             </div>
             <div class="span2">
                 <div class="header-list">
@@ -367,6 +367,6 @@
 <!-- Up button -->
 <a href="#" class="scrollup">Наверх</a>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="/resources/bootstrap/js/bootstrap.js"></script>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
 </body>
 </html>

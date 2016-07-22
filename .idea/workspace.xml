@@ -2,31 +2,467 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e0d5a8-6b9c-4b17-8ede-d69620871f03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryEdit.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/artifacts/beautytree_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_aop_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_beans_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_context_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_core_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_expression_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_web_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Administrator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Category.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/FeedBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Information.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Order.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/Product.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Enteties/ProductInCart.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/beautytree.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/resources/bootstrap/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/resources/bootstrap/img/kabuki.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/resources/bootstrap/img/puff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/resources/bootstrap/img/slider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Configurations/WebInitializer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Controllers/ClientController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Administrator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Category.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Client.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/FeedBack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Information.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Order.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/Product.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Enteties/ProductInCart.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/resources/META-INF/persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/addAdmin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/addArticle.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/addClient.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/addFeedBack.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/addPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminArticles.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminCatalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminClients.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminFeedbacks.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminIndex.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminLogin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/adminParameters.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/article.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/articleEdit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/cart.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/catalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/category.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryEdit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/clientEdit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/contacts.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/delivery.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/editAdmin.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/editOrder.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/feedbackEdit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/news.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/ordering.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/packing.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/product.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/productEdit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/search.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/Comfortaa-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/Panton Light Italic.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/Panton SemiBold Italic.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/Panton SemiBold.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/barkentina.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bavro-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bavro-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bavro-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bavro-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bavro-regular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/ideal-image-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher-bold-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher-italic-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher-regular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher.bold-italic(1).ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher.bold-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher.bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher.italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/philosopher.regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/tcal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/uni_sans_heavy.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/uni_sans_thin.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/bavro-regular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/generator_config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/css/webfont kit/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/1437-eyelining-set.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/202-angled-liner-zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/RT_Desktop_Fur.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/advice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/arrow-next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/arrow-prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/RT_Social_Blog_GiftGuide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/RT_Social_Blog_NYEWinterWhite.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/article8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/blush-brush-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/blush-brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/brush-divider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/brush-divider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/brush-divider3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/lip-brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/metal-brushes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/metalic-brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/pink-blush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/title-photo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/article/title-photo2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/back1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brush-divider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brush-divider3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushset1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushsets/brush1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushsets/brush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushsets/brush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/brushsets/brush4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/cal.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/cart/brush2-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/cart/brush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/cart/brush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/delivery/delivery1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/delivery/delivery2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/delivery/delivery3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/delivery/delivery4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/discount" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/discount.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/111.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner-main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/202-angled-liner5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/6337bbbe0f456d2c7170d87687add442.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/A1AC862F867F433D8ABD83FE09480146_3058470_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-black-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-black1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-black2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-black3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-white-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-white-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-white-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-white-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/JAF-white-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/fiolet-eyebrysh-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/fiolet-eyebrysh1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/fiolet-eyebrysh2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/fiolet-eyebrysh3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/fiolet-eyebrysh4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval shadow-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval-shadow2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval-shadow3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval-shadow4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval-shadow5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyebrushes/oval-shadow6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/all-ness.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/background-eye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/comfort.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/design.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/dotts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/eyelining-set-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/eyelining-set-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyelining-set/eyelining-set-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/eyeset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/101-triangle-foundation-zoom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/3fbd8441747b221be3a4825abf280aba.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/42415ae68519a3ea77e967ae20960e5e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/A1AC862F867F433D8ABD83FE09480146_3058470_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/BOLD-METALS-301-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/BOLD-METALS-301-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/DSC01105.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/RT101review2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/RTCONTOUR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/bambuk-blush-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/bambuk-blush1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/bambuk-blush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/bambuk-blush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/bambul-blush4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush-full-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush-full-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush-brush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/blush4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat contour-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat contour1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat-contour1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat-contour2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat-contour3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/flat-contour4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/images.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/kabuki-broun-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/kabuki-broun2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/kabuki-broun3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/kabuki-broun4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/kabuli-broun1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/real_techniques_bold_metal_brushes_100_arched_powder.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton-blush-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton-blush.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton-blush1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton-blush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton-blush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/ton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/facebrushes/triangle foundation5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-192x192.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-36x36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-48x48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/android-chrome-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-114x114.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-120x120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-152x152.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-180x180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-57x57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-60x60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-76x76.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/favicon-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/favicon-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/mstile-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/mstile-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/mstile-310x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/mstile-310x310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/mstile-70x70.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/favicons/safari-pinned-tab.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/footer-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/footer_element1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/fur-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/fur-back2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/fur-back3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/fur.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/gift.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/icon_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/icons-s2816c1d932.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/image1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/image2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/image3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/imagelogo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/kabuki.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/RT_Social_Blog_HolidaySets_BM.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/blush-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/blush1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/blush2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/blush3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/blush4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/delux-clutch2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/deluxe-gift-set-clutch-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/deluxe-gift-set-clutch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/deluxe-gift-set-clutch1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/deluxe-gift-set-clutch4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/deluxe-gift-set-clutch_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/fiolet-sintetic6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/lether-light-broun-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/lether-light-broun.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/lether-light-broun1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/lether-light-broun2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/lether-light-broun3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/pink-perple1-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple1-55.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple2-55.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple3-55.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/purple3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/steel-coll-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/steel-coll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/steel-coll1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/steel-coll3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/steel-coll4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple-small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple2-small-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple2-small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple2-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/large/style-perple4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/line1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/line2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/line3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/line4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/next_mon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/next_year.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/no_cal.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/ordering.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/packaging/package8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/present.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/prev_mon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/prev_year.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/puff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/real-gift.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/real-gift2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/real.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/sales.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/shop1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/shop2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/shop3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/slider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/img/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/garlic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/ideal-image-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/jquery-1.4.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/maskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/slides.min.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/tcal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/js/tcal_en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/resources/bootstrap/video/Collector's Edition Eyelining Set Tutorial - Real Techniques.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/kabuki.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/puff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/img/slider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Administrator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Category.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/FeedBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Information.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Order.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/Product.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Enteties/ProductInCart.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Administrator.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Administrator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Category.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Client.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Client.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/FeedBack.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/FeedBack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Information.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Order.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Order.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Product.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Product.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/ProductInCart.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/ProductInCart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Controllers/AdminController.class" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Controllers/AdminController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Controllers/AdminController.class" afterPath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Controllers/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Configurations/AppConfig.class" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Configurations/AppConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Configurations/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Configurations/AppConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/DAO/BeautyDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/DAO/BeautyDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/DAO/BeautyDAO.class" afterPath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/DAO/BeautyDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/DAO/BeautyDAOImplementation.class" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/DAO/BeautyDAOImplementation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/DAO/BeautyDAOImplementation.class" afterPath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/DAO/BeautyDAOImplementation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Controllers/ClientController.class" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/ua/kiev/brushes/Controllers/ClientController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Controllers/ClientController.class" afterPath="$PROJECT_DIR$/target/classes/ua/kiev/brushes/Controllers/ClientController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addArticle.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addArticle.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/addPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/addPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/addPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/addPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articleEdit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articleEdit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/target/classes/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/target/classes/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/categoryAdmin.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/categoryAdmin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addPage.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/addPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beautytree.iml" afterPath="$PROJECT_DIR$/beautytree.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/beautytree_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/beautytree_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productEdit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productEdit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/product.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/classes/WEB-INF/pages/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/product.jsp" afterPath="$PROJECT_DIR$/out/artifacts/beautytree_war_exploded/WEB-INF/pages/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/pages/product.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/pages/product.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="beautytree.iws" />
@@ -58,6 +494,20 @@
     <option name="GROUP_BY_TYPE" value="true" />
     <option name="SORT_CHILDREN" value="false" />
     <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - beautydbRus@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="beautydbRus" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -65,111 +515,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Client.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1278">
-              <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-              <folding>
-                <element signature="e#1945#1946#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="522">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java">
+      <file leaf-file-name="product.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1188">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="110.03704" vertical-offset="4591" max-vertical-offset="6768">
+              <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Product.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="3006">
-              <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getValue#0;class#Product#0" expanded="false" />
-                <element signature="e#4609#4610#0" expanded="true" />
-                <element signature="e#4655#4656#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedBack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/FeedBack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1242">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="3384">
+              <caret line="263" column="40" selection-start-line="263" selection-start-column="40" selection-end-line="263" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Order.java">
+      <file leaf-file-name="addAdmin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAdmin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1530">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2214">
+              <caret line="85" column="120" selection-start-line="85" selection-start-column="120" selection-end-line="85" selection-end-column="120" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductInCart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/ProductInCart.java">
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1710">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.5371901" vertical-offset="3851" max-vertical-offset="5850">
+              <caret line="247" column="55" selection-start-line="247" selection-start-column="55" selection-end-line="247" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Information.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java">
+      <file leaf-file-name="BeautyDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1746">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1337" max-vertical-offset="1962">
+              <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Administrator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Administrator.java">
+      <file leaf-file-name="BeautyDAOImplementation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1476">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8727" max-vertical-offset="9414">
+              <caret line="517" column="27" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="addPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-              <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2322">
+              <caret line="69" column="78" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -183,18 +603,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/advice-liner-brushes.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/ClientController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/advice.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ordering.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Information.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/delivery.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/contacts.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/category.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/article.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/packing.jsp" />
@@ -221,19 +629,31 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/catalog.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminCatalog.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryAdmin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/productEdit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articleEdit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addArticle.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryEdit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Information.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/FeedBack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/ProductInCart.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Product.java" />
       </list>
     </option>
   </component>
@@ -265,10 +685,26 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="45" />
     <option name="y" value="24" />
-    <option name="width" value="1301" />
+    <option name="width" value="1321" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -295,7 +731,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,6 +771,40 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -359,6 +829,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -414,7 +914,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Enteties" />
+              <option name="myItemId" value="Domains" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,10 +973,44 @@
               <option name="myItemId" value="brushes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beautytree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brushes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,12 +1023,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.18081181" />
+    <property name="project.structure.side.proportion" value="0.2266055" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -502,9 +1036,13 @@
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="LayoutCode.rearrangeEntriesJSP" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resouces" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
     </key>
@@ -573,6 +1111,26 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -696,6 +1254,27 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -747,10 +1326,15 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.261" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8000/" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="beautytree:war exploded">
           <settings>
@@ -760,7 +1344,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_beautytree" />
-        <option name="HTTP_PORT" value="8000" />
+        <option name="JNDI_PORT" value="6060" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -898,12 +1482,45 @@
       <workItem from="1453635832142" duration="691000" />
       <workItem from="1453639057242" duration="3589000" />
       <workItem from="1453736045022" duration="674000" />
-      <workItem from="1454438898792" duration="30589000" />
+      <workItem from="1454438898792" duration="30958000" />
+      <workItem from="1454581680172" duration="852000" />
+      <workItem from="1454582669426" duration="1084000" />
+      <workItem from="1454669396918" duration="1454000" />
+      <workItem from="1460707717327" duration="2286000" />
+      <workItem from="1460885699698" duration="514000" />
+      <workItem from="1461002457785" duration="1328000" />
+      <workItem from="1461073301499" duration="1386000" />
+      <workItem from="1461078811654" duration="1329000" />
+      <workItem from="1461265587902" duration="74000" />
+      <workItem from="1461314233010" duration="599000" />
+      <workItem from="1463471062183" duration="24940000" />
+      <workItem from="1463740014096" duration="36000" />
+      <workItem from="1464887275324" duration="7162000" />
+      <workItem from="1464895361600" duration="13000" />
+      <workItem from="1464895397179" duration="3891000" />
+      <workItem from="1465197869105" duration="681000" />
+      <workItem from="1465210141985" duration="791000" />
+      <workItem from="1465287124076" duration="3507000" />
+      <workItem from="1465371243456" duration="35000" />
+      <workItem from="1465398230346" duration="920000" />
+      <workItem from="1465407229711" duration="5208000" />
+      <workItem from="1465827407401" duration="1108000" />
+      <workItem from="1465899242669" duration="2038000" />
+      <workItem from="1466061594954" duration="622000" />
+      <workItem from="1466150376971" duration="1902000" />
+      <workItem from="1466418521933" duration="1196000" />
+      <workItem from="1466513272805" duration="145000" />
+      <workItem from="1467726473953" duration="816000" />
+      <workItem from="1468076442101" duration="137000" />
+      <workItem from="1468748169830" duration="1821000" />
+      <workItem from="1468775782444" duration="1303000" />
+      <workItem from="1469096902637" duration="7924000" />
+      <workItem from="1469199873088" duration="855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="535764000" />
+    <option name="totallyTimeSpent" value="614090000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -926,40 +1543,40 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="45" y="24" width="1321" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993559" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5652174" sideWeight="0.5003984" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291039" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21095008" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17370518" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23607843" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291039" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862744" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24900873" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993559" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.69598764" sideWeight="0.4996016" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -992,7 +1609,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1001,90 +1618,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15048" max-vertical-offset="17520">
-          <caret line="1024" column="17" selection-start-line="1024" selection-start-column="17" selection-end-line="1024" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5925925" vertical-offset="227" max-vertical-offset="3618">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="4320">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/contacts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40502793" vertical-offset="107" max-vertical-offset="3816">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/delivery.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12569833" vertical-offset="81" max-vertical-offset="4194">
-          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ordering.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70522386" vertical-offset="81" max-vertical-offset="4284">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/packing.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3333333" vertical-offset="2187" max-vertical-offset="4518">
-          <caret line="125" column="53" selection-start-line="125" selection-start-column="53" selection-end-line="125" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/WebInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="432">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.48148" vertical-offset="599" max-vertical-offset="1692">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/feedbackEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7858942" vertical-offset="606" max-vertical-offset="2070">
-          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53400505" vertical-offset="760" max-vertical-offset="2232">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addFeedBack.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73551637" vertical-offset="608" max-vertical-offset="2394">
@@ -1106,46 +1639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="134.74074" vertical-offset="3836" max-vertical-offset="4302">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/clientEdit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4307305" vertical-offset="1071" max-vertical-offset="1962">
           <caret line="69" column="74" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7002519" vertical-offset="3250" max-vertical-offset="6804">
-          <caret line="196" column="42" selection-start-line="196" selection-start-column="31" selection-end-line="196" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editAdmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="2232">
-          <caret line="85" column="105" selection-start-line="85" selection-start-column="105" selection-end-line="85" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1884" max-vertical-offset="4590">
-          <caret line="118" column="102" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminIndex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09638554" vertical-offset="1068" max-vertical-offset="2250">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1163,137 +1660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminParameters.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1692">
-          <caret line="65" column="94" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0299401" vertical-offset="444" max-vertical-offset="5832">
-          <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAdmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.148148" vertical-offset="1364" max-vertical-offset="2214">
-          <caret line="85" column="120" selection-start-line="85" selection-start-column="120" selection-end-line="85" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/catalog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80501395" vertical-offset="1763" max-vertical-offset="3672">
-          <caret line="114" column="102" selection-start-line="114" selection-start-column="102" selection-end-line="114" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.740741" vertical-offset="37033" max-vertical-offset="121914">
-          <caret line="2066" column="19" selection-start-line="2066" selection-start-column="19" selection-end-line="2066" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminArticles.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.111111" vertical-offset="987" max-vertical-offset="1890">
-          <caret line="67" column="87" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/category.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.016713" vertical-offset="1168" max-vertical-offset="4248">
           <caret line="145" column="89" selection-start-line="145" selection-start-column="40" selection-end-line="145" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="2034">
-          <caret line="54" column="126" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="3600">
-          <caret line="192" column="12" selection-start-line="192" selection-start-column="12" selection-end-line="192" selection-end-column="12" />
-          <folding>
-            <element signature="method#getAdminPassword#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAdminUsername#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAdminByRole#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAdminById#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllAdmins#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveAdmin#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveAdmin#1;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllProducts#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getProductsByCategory#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getProductById#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#search#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveProduct#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getCategoryByName#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getCategoryById#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getProductsByCategoryId#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllCategories#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveCategory#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveOrder#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveFeedBack#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllFeedBacks#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getFeedBacksByClientId#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getFeedBacksByProductId#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getFeedBackById#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveFeedBack#1;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getOrders#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getClients#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getProductsInCart#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveProductInCart#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getClient#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#findClientByNameAndEmail#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveClient#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#addClient#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getOrder#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#saveOrder#1;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#deleteOrder#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllArticles#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllArticles#1;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllArticleByName#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllArticlesOrdered#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#getAllArticlesDesc#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#addArticle#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#deleteArticle#0;class#BeautyDAOImplementation#0" expanded="false" />
-            <element signature="method#changeArticle#0;class#BeautyDAOImplementation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.62963" vertical-offset="5365" max-vertical-offset="13014">
-          <caret line="314" column="41" selection-start-line="314" selection-start-column="41" selection-end-line="314" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,7 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7407407" vertical-offset="1006" max-vertical-offset="2070">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,7 +1678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.0" vertical-offset="981" max-vertical-offset="2052">
           <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,7 +1685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.444445" vertical-offset="1383" max-vertical-offset="1944">
           <caret line="91" column="89" selection-start-line="91" selection-start-column="89" selection-end-line="91" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,19 +1696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.148149" vertical-offset="1841" max-vertical-offset="2448">
-          <caret line="116" column="62" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/categoryEdit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.555555" vertical-offset="1119" max-vertical-offset="1656">
           <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,80 +1707,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.3333335" vertical-offset="1116" max-vertical-offset="3150">
           <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Category.java">
+    <entry file="file://$PROJECT_DIR$/beautytree.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1188">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Client.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1278">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="234">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/feedbackEdit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2222223" vertical-offset="1128" max-vertical-offset="2070">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/ordering.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="45.814816" vertical-offset="1507" max-vertical-offset="4284">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7777778" vertical-offset="1068" max-vertical-offset="2250">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminParameters.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.296296" vertical-offset="919" max-vertical-offset="1692">
+          <caret line="65" column="94" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3965516" vertical-offset="1217" max-vertical-offset="2232">
+          <caret line="85" column="66" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1692">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminArticles.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="987" max-vertical-offset="1890">
+          <caret line="70" column="9" selection-start-line="68" selection-start-column="1" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="12762">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="4302">
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/WebInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/401877aa/48981687-e6e3-4e20-bbc3-045330d4632b/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Configurations/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="846">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="3006">
-          <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getValue#0;class#Product#0" expanded="false" />
-            <element signature="e#4609#4610#0" expanded="true" />
-            <element signature="e#4655#4656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/FeedBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1242">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1530">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/ProductInCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1710">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Information.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1746">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Enteties/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1476">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1246#1247#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
+            <element signature="e#1807#1808#0" expanded="false" />
+            <element signature="e#1868#1869#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1430,15 +1825,270 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/catalog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1769" max-vertical-offset="3672">
+          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2707" max-vertical-offset="4590">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="573" max-vertical-offset="1566">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1134">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#Order#1;class#Order#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#1562#1563#0" expanded="false" />
+            <element signature="e#1590#1591#0" expanded="false" />
+            <element signature="e#1619#1620#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1684#1685#0" expanded="false" />
+            <element signature="e#1716#1717#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1782#1783#0" expanded="false" />
+            <element signature="e#1830#1831#0" expanded="false" />
+            <element signature="e#1870#1871#0" expanded="false" />
+            <element signature="e#1905#1906#0" expanded="false" />
+            <element signature="e#1936#1937#0" expanded="false" />
+            <element signature="e#1984#1985#0" expanded="false" />
+            <element signature="e#2024#2025#0" expanded="false" />
+            <element signature="e#2057#2058#0" expanded="false" />
+            <element signature="e#2086#2087#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2220#2221#0" expanded="false" />
+            <element signature="e#2257#2258#0" expanded="false" />
+            <element signature="e#2330#2331#0" expanded="false" />
+            <element signature="e#2377#2378#0" expanded="false" />
+            <element signature="e#2412#2413#0" expanded="false" />
+            <element signature="e#2446#2447#0" expanded="false" />
+            <element signature="e#2497#2498#0" expanded="false" />
+            <element signature="e#2543#2544#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/FeedBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#FeedBack#1;class#FeedBack#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="false" />
+            <element signature="e#870#871#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#966#967#0" expanded="false" />
+            <element signature="e#996#997#0" expanded="false" />
+            <element signature="e#1043#1044#0" expanded="false" />
+            <element signature="e#1081#1082#0" expanded="false" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1137#1138#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1240#1241#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1313#1314#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1416#1417#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+            <element signature="e#1509#1510#0" expanded="false" />
+            <element signature="e#1544#1545#0" expanded="false" />
+            <element signature="e#1575#1576#0" expanded="false" />
+            <element signature="e#1623#1624#0" expanded="false" />
+            <element signature="e#1663#1664#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/ProductInCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="1584">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1151#1152#0" expanded="false" />
+            <element signature="e#1192#1193#0" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1312#1313#0" expanded="false" />
+            <element signature="e#1342#1343#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1413#1414#0" expanded="false" />
+            <element signature="e#1446#1447#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1588#1589#0" expanded="false" />
+            <element signature="e#1632#1633#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1698#1699#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1781#1782#0" expanded="false" />
+            <element signature="e#1818#1819#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1903#1904#0" expanded="false" />
+            <element signature="e#1947#1948#0" expanded="false" />
+            <element signature="e#1978#1979#0" expanded="false" />
+            <element signature="e#2005#2006#0" expanded="false" />
+            <element signature="e#2045#2046#0" expanded="false" />
+            <element signature="e#2077#2078#0" expanded="false" />
+            <element signature="e#2106#2107#0" expanded="false" />
+            <element signature="e#2134#2135#0" expanded="false" />
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="false" />
+            <element signature="e#2242#2243#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="false" />
+            <element signature="e#2321#2322#0" expanded="false" />
+            <element signature="e#2361#2362#0" expanded="false" />
+            <element signature="e#2392#2393#0" expanded="false" />
+            <element signature="e#2420#2421#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="false" />
+            <element signature="e#2495#2496#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="702">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2322">
+          <caret line="69" column="78" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2214">
+          <caret line="85" column="120" selection-start-line="85" selection-start-column="120" selection-end-line="85" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/tcal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/ideal-image-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.58064514" vertical-offset="0" max-vertical-offset="1602">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.290323" vertical-offset="561" max-vertical-offset="21024">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33275262" vertical-offset="61747" max-vertical-offset="121914">
+          <caret line="3441" column="39" selection-start-line="3441" selection-start-column="36" selection-end-line="3441" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="110.03704" vertical-offset="4591" max-vertical-offset="6768">
+          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Domains/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="3384">
+          <caret line="263" column="40" selection-start-line="263" selection-start-column="40" selection-end-line="263" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAOImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8727" max-vertical-offset="9414">
+          <caret line="517" column="27" selection-start-line="517" selection-start-column="27" selection-end-line="517" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/DAO/BeautyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1337" max-vertical-offset="1962">
+          <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/kiev/brushes/Controllers/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5371901" vertical-offset="3851" max-vertical-offset="5850">
+          <caret line="247" column="55" selection-start-line="247" selection-start-column="55" selection-end-line="247" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1453,7 +2103,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.18081181" />
+                <option value="0.2266055" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1466,7 +2116,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.18081181" />
+                <option value="0.2266055" />
               </list>
             </option>
           </splitter-proportions>
@@ -1497,11 +2147,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web2|beautytree</last-edited>
+          <last-edited>Web|beautytree</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.18081181" />
+                <option value="0.2266055" />
               </list>
             </option>
           </splitter-proportions>
@@ -1513,7 +2163,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.18081181" />
+                <option value="0.2266055" />
               </list>
             </option>
           </splitter-proportions>

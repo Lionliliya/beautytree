@@ -8,14 +8,16 @@
         <properties>
             <property name="hibernate.show_sql" value="true" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/beautydbRus"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/beautydbRus?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="123_lion_123" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.connection.characterEncoding" value="utf8"/>
+            <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
             <property name="hibernate.connection.useUnicode" value="true"/>
             <property name="hibernate.connection.charSet" value="UTF-8"/>
+
+
         </properties>
     </persistence-unit>
 </persistence>

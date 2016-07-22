@@ -16,9 +16,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- * Created by lionliliya on 10.10.15.
- */
+
 @Configuration
 @ComponentScan("ua.kiev.brushes")
 @EnableWebMvc

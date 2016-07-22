@@ -1,11 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lionliliya
-  Date: 02.11.15
-  Time: 15:37
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -72,8 +65,8 @@
           <h4>Новый товар.</h4>
           <div class="row">
             <div class="span5">
-              <span class="help-inline">Название товара должно быть не больше 25 символов</span><br>
-              <input type="text" name="name" maxlength="25" placeholder="Имя товара" required><br>
+              <span class="help-inline">Название товара должно быть не больше 120 символов</span><br>
+              <input type="text" name="name" maxlength="120" placeholder="Имя товара" required><br>
               <input type="text" name="price" placeholder="Цена" required><br>
               <input type="text" name="currency" placeholder="Валюта" required><br>
               <span class="help-inline">Выбирите категорию товара</span><br>
